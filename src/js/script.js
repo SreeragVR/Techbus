@@ -144,4 +144,87 @@ if(container && icons){
   })
 }
 
+const roboVdo = document.querySelector('.robo-vdo') 
+const vdoBox = document.querySelector('.video-container') 
+const vdoClose = document.querySelector('.vdo-close') 
+const vdoPlay = document.querySelector('.play-button') 
+const bannerContainer = document.querySelector('.hero-banner') 
+
+if(roboVdo && vdoBox && vdoClose && vdoPlay && bannerContainer){
+  vdoPlay.addEventListener('click', ()=>{
+    vdoBox.classList.add('full-vdo-screen')
+    vdoClose.classList.remove('hidden')
+    bannerContainer.classList.add('z-11')
+    vdoPlay.classList.add('no-vissible')
+    roboVdo.muted = false
+    roboVdo.currentTime = 0
+    document.body.style.overflow = "hidden"
+  })
+  vdoClose.addEventListener('click',()=>{
+    vdoBox.classList.remove('full-vdo-screen')
+    bannerContainer.classList.remove('z-11')
+    vdoClose.classList.add('hidden')
+    vdoPlay.classList.remove('no-vissible')
+    roboVdo.muted = true
+    document.body.style.overflow = ""
+  })
+}
+
+
+// SCROLL ANIMATIONS
+
+function scrollingElements(showClass,elementClass){
+if(elementClass.length != 0){
+    const observer = new IntersectionObserver((entries)=>{
+    entries.forEach((entry)=>{
+    console.log(entry);
+    if(entry.isIntersecting){
+    console.log(entry);
+    
+    entry.target.classList.add(showClass)
+    }else{
+    entry.target.classList.remove(showClass)
+    null
+    }
+})
+}, {
+    threshold: 0.2
+})
+
+const elements = document.querySelectorAll(elementClass)
+elements.forEach((el)=>observer.observe(el))
+}
+}
+
+function scrollingElementsQuick(showClass,elementClass){
+if(elementClass.length != 0){
+    const observer = new IntersectionObserver((entries)=>{
+    entries.forEach((entry)=>{
+    console.log(entry);
+    if(entry.isIntersecting){
+    console.log(entry);
+    
+    entry.target.classList.add(showClass)
+    }else{
+    // entry.target.classList.remove(showClass)
+    null
+    }
+})
+}, {
+    threshold: 0.4
+})
+
+const elements = document.querySelectorAll(elementClass)
+elements.forEach((el)=>observer.observe(el))
+}
+}
+
+scrollingElements('left-show','.from-left')
+scrollingElements('top-show','.from-top')
+scrollingElements('right-show','.from-right')
+scrollingElementsQuick('bottom-show','.from-bottom')
+
+
+
+
 })
