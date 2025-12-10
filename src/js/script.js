@@ -177,13 +177,10 @@ function scrollingElements(showClass,elementClass){
 if(elementClass.length != 0){
     const observer = new IntersectionObserver((entries)=>{
     entries.forEach((entry)=>{
-    console.log(entry);
     if(entry.isIntersecting){
-    console.log(entry);
-    
     entry.target.classList.add(showClass)
     }else{
-    entry.target.classList.remove(showClass)
+    // entry.target.classList.remove(showClass)
     null
     }
 })
@@ -200,10 +197,7 @@ function scrollingElementsQuick(showClass,elementClass){
 if(elementClass.length != 0){
     const observer = new IntersectionObserver((entries)=>{
     entries.forEach((entry)=>{
-    console.log(entry);
     if(entry.isIntersecting){
-    console.log(entry);
-    
     entry.target.classList.add(showClass)
     }else{
     // entry.target.classList.remove(showClass)
@@ -224,7 +218,46 @@ scrollingElements('top-show','.from-top')
 scrollingElements('right-show','.from-right')
 scrollingElementsQuick('bottom-show','.from-bottom')
 
+function overLayText(outline, fill) {
+  const headline = document.querySelector(outline);
+  const section = document.querySelector(fill);
 
+  if (!section || !headline) return;
+
+  // Setup once – base fixed positioning
+  headline.style.position = "fixed";
+  headline.style.left = "0";
+  headline.style.right = "0";
+  headline.style.top = "0";
+  headline.style.willChange = "transform, opacity";
+  headline.style.pointerEvents = "none"; // so it doesn't block clicks
+
+  function updateHeadline() {
+    const rect = section.getBoundingClientRect();
+    const vh = window.innerHeight;
+
+    if (rect.bottom <= 0 || rect.top >= vh) {
+      // section is off screen
+      headline.style.opacity = "0";
+    } else {
+      headline.style.opacity = "1";
+
+      // Match the fill's vertical position exactly
+      const y = Math.round(rect.top); // rounding avoids sub-pixel jitter
+      headline.style.transform = `translate3d(0, ${y}px, 0)`; // GPU-friendly
+    }
+
+    // keep syncing every frame
+    requestAnimationFrame(updateHeadline);
+  }
+
+  // start the loop
+  requestAnimationFrame(updateHeadline);
+}
+
+// example usage
+overLayText(".brand-head-1", ".brand-head-2");
+overLayText(".soft-head-1", ".soft-head-2");
 
 
 })

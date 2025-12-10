@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax</title>
+    <!-- STYLE LINK -->
+     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="css/custom-style.css">
+     <script type="module" src="https://unpkg.com/@splinetool/viewer@1.12.4/build/spline-viewer.js"></script>
+     <style>
+.service-headline{
+    font-family: "Be Vietnam Pro", sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 150px;
+    line-height: 150px;
+    font-weight: 900;
+}
+
+/* .sticky-headline {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+} */
+     </style>
+    <!-- STYLE LINK -->
+</head>
+<body style="background-color: black;"> 
+  <div class="relative">
+    <div class="flex items-center justify-center min-h-screen sticky top-0 z-2">
+      <div class="w-screen min-h-screen sticky top-0 left-0 hidden lg:flex justify-center lg:justify-end xl:justify-center -z-2 order-2 lg:order-1">
+        <div class="absolute bottom-0 top-0 w-full flex items-center justify-center">
+          <spline-viewer draggable="false" class="w-full" url="https://prod.spline.design/kEttkIzG5O8GDj3K/scene.splinecode"></spline-viewer>
+        </div>
+      </div>
+    </div>
+
+    <div class="px-5 sm:px-7 md:px-9 lg:px-10 pt-28 lg:pt-[126px] pb-10 sm:pb-12 md:pb-14 lg:pb-20 absolute gap-8 top-0 z-[2] pointer-events-none order-1 lg:order-2 banner_background">
+
+        <div class="flex flex-col xl:flex-row items-start xl:items-center justify-start lg:justify-center xl:justify-between h-max lg:min-h-[calc(100vh-206px)]">
+          <div class="w-full lg:w-1/2 xl:w-1/3 from-left">
+            <h2 class="rubik text-[34px] sm:text-[40px] md:text-[48px] lg:text-[56px] font-bold text-white leading-[34px] sm:leading-[40px] md:leading-[48px] lg:leading-[60px] mb-5 sm:mb-6 md:mb-7 lg:mb-8">Your Bridge to Digital Success</h2>
+            <p class="raleway text-sm md:text-[15px] leading-[22px] md:leading-[24px] text-white">
+              Welcome to Techbus Tech Solutions, a leading IT solutions company based in Kochi, Kerala, helping businesses transform with 
+              custom software, web and mobile app development, ERP, CRM, HRMS, eCommerce solutions, and digital marketing services.
+            </p>
+            <a href="#" class="learn-button py-3 px-8 inline-block rounded-[10px] mt-4 md:mt-6 lg:mt-8 pointer-events-auto">LEARN MORE</a>
+          </div>
+
+          <div class="w-full lg:w-1/2 xl:w-1/4 flex flex-col sm:flex-row xl:flex-col sm:items-center xl:items-stretch gap-3 video-box px-3 sm:px-[18px] py-6 sm:py-8 overflow-hidden">
+            <div class="bg-white min-w-64 h-[195px] rounded-2xl overflow-hidden cursor-pointer flex items-center justify-center pointer-events-auto video-container from-right">
+              <span class="vdo-close hidden"></span>
+              <video src="assets/Futuristic Robot Introduces Tech Solutions.mp4" autoplay muted loop loading="lazy" class="object-contain rounded-2xl robo-vdo"></video>
+              <div class="play-button">
+                <span class="play-round-1"></span>
+                <span class="play-round-2"></span>
+                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.5 6.412C6.5 6.257 6.537 6.105 6.607 5.969C6.837 5.529 7.357 5.37 7.77 5.615L18.06 11.703C18.2 11.786 18.315 11.909 18.392 12.058C18.622 12.498 18.472 13.053 18.06 13.297L7.77 19.385C7.64478 19.4605 7.50124 19.5003 7.355 19.5C6.883 19.5 6.5 19.092 6.5 18.589V6.412Z" 
+                  fill="white"/>
+                </svg>
+              </div>
+            </div>
+            <p class="raleway text-sm md:text-[15px] leading-[22px] md:leading-[24px] text-white from-right">At Techbus, we don’t just build technology we craft customized, scalable, and future-ready solutions that empower organizations to achieve growth, efficiency, and customer engagement.</p>
+          </div>
+        </div>
+
+        <div class="flex flex-col xl:flex-row items-start xl:items-center justify-start lg:justify-center xl:justify-between h-max lg:min-h-[calc(100vh-206px)]">
+          
+        </div>
+        
+      </div>
+
+    <div class="software-development-section">
+      <div class="px-5 sm:px-7 md:px-9 lg:px-10 py-10 sm:py-14 md:py-16 lg:py-24 min-h-screen flex items-center justify-center absolute top-[100vh] left-0 z-3  soft-head-1">
+        <h2 class="service-headline"  style="color: #ffffff00; -webkit-text-stroke: 2px #ffffff;">Software Development</h2>
+      </div>
+
+      <div class="sticky top-0 soft-head-2">
+        <div class="relative">
+          <div class="px-5 sm:px-7 md:px-9 lg:px-10 py-10 sm:py-14 md:py-16 lg:py-24 min-h-screen flex items-center justify-center z-1">
+            <h2 class="service-headline">Software Development</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="min-h-screen bg-amber-100"></div>
+    </div>
+
+    <div class="min-h-screen"></div>
+  </div>
+
+  <div class="min-h-screen bg-amber-700"></div>
+
+
+  <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const headline = document.querySelector(".soft-head-1")
+    const section = document.querySelector(".soft-head-2")
+    let ticking = false
+    function updateHeadline() {
+      const rect = section.getBoundingClientRect()
+      // If the section is completely above or below the viewport, hide the headline
+      if (rect.bottom <= 0 || rect.top >= window.innerHeight) {
+        headline.style.opacity = "0"
+      } else {
+        // Show headline and move it with the section
+        headline.style.opacity = "1"
+        headline.style.position = "fixed"
+        headline.style.left = "0"
+        headline.style.right = "0";
+        // Put the headline's container at the same Y position as the section
+        headline.style.top = rect.top + "px"
+      }
+      ticking = false
+    }
+    function onScroll() {
+      if (!ticking) {
+        ticking = true;
+        window.requestAnimationFrame(updateHeadline)
+      }
+    }
+    // Initial position
+    updateHeadline();
+    window.addEventListener("scroll", onScroll)
+  })
+</script>
+
+<script src="js/script.js"></script>
+</body>
+</html>

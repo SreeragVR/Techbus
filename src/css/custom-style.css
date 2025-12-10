@@ -172,7 +172,6 @@ body{
 .hero-banner{
     /* background: linear-gradient(to right, var(--primary-dark), var(--primary-color)); */
     position: relative;
-    height: 200vh;
 }
 .hero-banner::before{
     content: '';
@@ -409,6 +408,7 @@ body{
     cursor: pointer;
     color: var(--primary-dark);
     &:hover{
+        transition-delay: 0ms !important;
         filter: brightness(1.3);
         transform: translateY(-12px);
         box-shadow: 0px 30px 30px rgba(114, 37, 207, 0.2);
@@ -420,6 +420,7 @@ body{
     transition: transform ease 0.5s,box-shadow ease 0.5s, background ease-in-out 0.5s;
     cursor: pointer;
     &:hover{
+        transition-delay: 0ms !important;
         background:#e6d1ff;
         transform: translateY(-12px);
         box-shadow: 0px 30px 30px rgba(114, 37, 207, 0.2);
@@ -437,6 +438,7 @@ body{
     backdrop-filter: blur(4px);
     transition: ease 0.5s;
     &:hover{
+        transition-delay: 0s !important;
         background-color: #ffffff;
         filter: brightness(1.3);
         transform: translateY(-12px);
@@ -450,6 +452,7 @@ body{
     backdrop-filter: blur(4px);
     transition: ease 0.5s;
     &:hover{
+        transition-delay: 0ms !important;
         background-color: var(--primary-color);
         filter: brightness(1.3);
         transform: translateY(-12px);
@@ -744,11 +747,22 @@ input[type=number] {
 .service-box{
     border-left: 1px solid #c6a1ce80;
     border-right: 1px solid #c6a1ce80;
-    min-height: 415px;
+    transition: 0.5s ease-out;
+    &:hover{
+        transition-delay: 0ms !important;
+        background-color: var(--primary-dark);
+        border-radius: 14px;
+        transform: scale(1.02);
+    }
 }
 .serviceSwiper .swiper-pagination-bullet-active{
     background-color: white;
 }
+.serviceSwiper .swiper-slide {
+  height: auto !important;   
+  display: flex;
+}
+
 .software-name a{
       background: linear-gradient( #7125CF, #FFFFFF);
     -webkit-background-clip: text;
@@ -806,6 +820,11 @@ input[type=number] {
     border: 1px solid #391369;
     position: relative;
     overflow: hidden;
+    transition: 0.5s ease;
+    &:hover{
+        transition-delay: 0ms !important;
+        transform: scale(1.05);
+    }
 }
 .why-software-card::before{
     content: '';
@@ -831,9 +850,10 @@ input[type=number] {
   color: white;
   border-radius: 12px;
   text-align: center;
-  transition: 0.3s ease;
+  transition: filter 0.3s ease,box-shadow 0.3s ease,;
   &:hover{
     filter: brightness(1.4);
+    box-shadow: 0px 8px 20px #7225cf3f;
   }
 }
 .benefit-card{
@@ -957,34 +977,101 @@ canvas {
   opacity: 1;
 }
 .from-bottom{
-  transform: translateY(10%);
+  transform: translateY(20%);
   filter: blur(2px);
   opacity: 0;
-  transition: 0.5s ease;
+  transition: 1s ease;
 }
 .bottom-show{
   transform: translateY(0);
   filter: blur(0);
   opacity: 1;
 }
-.choose-card:nth-child(2){
+.choose-card:nth-child(2),
+.benefit-card:nth-child(2),
+.do-card:nth-child(2),
+.software-card:nth-child(2),
+.software-card:nth-child(5),
+.do-card:nth-child(5),
+.why-software-card:nth-child(2),.why-software-card:nth-child(6),.why-software-card:nth-child(10),.why-software-card:nth-child(14)
+{
     transition-delay: 200ms;
 }
-.choose-card:nth-child(3){
+
+.choose-card:nth-child(3),
+.benefit-card:nth-child(3),
+.do-card:nth-child(3),
+.software-card:nth-child(3),
+.software-get-in-card,.do-get-in-card,
+.why-software-card:nth-child(3),.why-software-card:nth-child(7),.why-software-card:nth-child(11),.why-software-card:nth-child(15)
+ {
     transition-delay: 400ms;
 }
-.choose-card:nth-child(4){
+
+.choose-card:nth-child(4),
+.benefit-card:nth-child(4),
+.why-software-card:nth-child(4),.why-software-card:nth-child(8),.why-software-card:nth-child(12),.why-software-card:nth-child(16)
+ {
     transition-delay: 600ms;
 }
-.benefit-card:nth-child(2){
+
+.seo-section .swiper-wrapper .swiper-slide:nth-child(2) .service-box {
     transition-delay: 200ms;
 }
-.benefit-card:nth-child(3){
+.seo-section .swiper-wrapper .swiper-slide:nth-child(3) .service-box {
     transition-delay: 400ms;
 }
-.benefit-card:nth-child(4){
+.seo-section .swiper-wrapper .swiper-slide:nth-child(4) .service-box {
     transition-delay: 600ms;
 }
+.service-headline{
+    font-family: "Be Vietnam Pro", sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 150px;
+    line-height: 150px;
+    font-weight: 900;
+}
+.software-development-section,.branding-section{
+    position: relative;
+}
+.stroke-headline{
+    color: #ffffff00;
+    -webkit-text-stroke: 2px #ffffff;
+}
+.sticky-headline {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+}
+
+.brand-serivce-card:nth-child(1){
+    background-color: rgb(179, 161, 255,0.8);
+    backdrop-filter: blur(10px);
+}
+.brand-serivce-card:nth-child(2){
+    background-color: rgb(179, 234, 183,0.8);
+    backdrop-filter: blur(10px);
+}
+.brand-serivce-card:nth-child(3){
+    background-color: rgb(251, 200, 115,0.8);
+    backdrop-filter: blur(10px);
+}
+.brand-serivce-card:nth-child(4){
+    background-color: rgba(251, 161, 252, 0.8);
+    backdrop-filter: blur(10px);
+}
+.brand-serivce-image{
+
+}
+
+
+/* .brand-serivce-card{
+    background-color: #ffffffd5;
+    backdrop-filter: blur(10px);
+} */
 
 /* RESPONSIVE */
     
@@ -994,9 +1081,6 @@ canvas {
 }
 .vision-container{
 --circle-size: 100px;
-}
-.service-box{
-    min-height: 350px;
 }
 .mockup-container::before{
     width: 200px;
@@ -1028,9 +1112,6 @@ canvas {
 @media (min-width: 40em) and (max-width: 48em) {
 .vision-container{
 --circle-size: 200px;
-}
-.service-box{
-    min-height: 375px;
 }
 .mockup-container::before{
     width: 250px;
@@ -1121,9 +1202,6 @@ canvas {
 .vision-container{
 --circle-size: 280px;
 }
-.service-box{
-    min-height: 350px;
-}
 .mockup-container::before{
     width: 300px;
     height: 300px;
@@ -1131,9 +1209,6 @@ canvas {
 }
 
 @media (min-width: 64em) and (max-width: 80em) {
-.service-box{
-    min-height: 380px;
-}
 .mockup-container::before{
     width: 400px;
     height: 400px;
@@ -1145,9 +1220,6 @@ canvas {
 
 
 @media (min-width: 80em) and (max-width: 96em) {
-.service-box{
-    min-height: 420px;
-}
 .mockup-container::before{
     width: 450px;
     height: 450px;
