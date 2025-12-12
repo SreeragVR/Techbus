@@ -185,6 +185,18 @@ body{
     z-index: -4;
     background: linear-gradient(to right, var(--primary-dark), var(--primary-color));
 }
+ .hero-banner::after{
+    content: '';
+    position: fixed;
+    display: block;
+    width: 500px;
+    height: 500px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    z-index: 0;
+    background: radial-gradient(50% 50% at 50% 50%, #7125CF 0%, rgba(113, 37, 207, 0) 100%);
+ }
 .learn-button{
     background-color: rgba(255, 255, 255, 0.8);
     color: var(--primary-color);
@@ -242,6 +254,7 @@ body{
 }
 .play-button{
     position: absolute;
+    bottom: 10%;
     z-index: 1;
     width: 70px;
     height: 70px;
@@ -1028,9 +1041,10 @@ canvas {
     font-family: "Be Vietnam Pro", sans-serif;
     color: white;
     text-align: center;
-    font-size: 150px;
-    line-height: 150px;
+    font-size: 100px;
+    line-height: 100px;
     font-weight: 900;
+    transform: translateY(64px);
 }
 .software-development-section,.branding-section{
     position: relative;
@@ -1047,31 +1061,75 @@ canvas {
     z-index: 3;
 }
 
-.brand-serivce-card:nth-child(1){
-    background-color: rgb(179, 161, 255,0.8);
-    backdrop-filter: blur(10px);
-}
-.brand-serivce-card:nth-child(2){
-    background-color: rgb(179, 234, 183,0.8);
-    backdrop-filter: blur(10px);
-}
-.brand-serivce-card:nth-child(3){
-    background-color: rgb(251, 200, 115,0.8);
-    backdrop-filter: blur(10px);
-}
-.brand-serivce-card:nth-child(4){
-    background-color: rgba(251, 161, 252, 0.8);
+.brand-serivce-card{
     backdrop-filter: blur(10px);
 }
 .brand-serivce-image{
-
+    position: relative;
+}
+.brand-serivce-image::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    bottom: 0;
+    transform: translateY(40%);
+    background: radial-gradient(50% 50% at 50% 50%, rgba(22, 22, 22, 0.4) 0%, rgba(22, 22, 22, 0) 100%);
+    filter: blur(2px);
 }
 
-
-/* .brand-serivce-card{
-    background-color: #ffffffd5;
-    backdrop-filter: blur(10px);
-} */
+.software-serivce-card{
+    background-color: var(--primary-color);
+}
+.software-serivce-image .shape_image{
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    top: -20%;
+}
+.marketing-serivce-image::before{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: var(--back-color);
+    left: 50%;
+    top: 0;
+    transform: translate(-50%,-10%);
+}
+.seo-serivce-card{
+    background: linear-gradient(to bottom,#7C1ED4,#4B0477);
+}
+.seo-serivce-image{
+    position: absolute;
+    bottom: 50%;
+}
+.seo-serivce-image::before{
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(180deg, #4B0477 24.04%, #7C1ED4 100%);
+    z-index: -1;
+    border-radius: 50%;
+}
+.e-commerse-serivce-card{
+    background-color: white;
+}
+.e-commerse-serivce-image::before{
+    content: '';
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    background: url('../assets/icons/heart.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 16px;
+    right: 16px;
+}
 
 /* RESPONSIVE */
     
