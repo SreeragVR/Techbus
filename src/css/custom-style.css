@@ -194,7 +194,7 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -30%);
-    z-index: 0;
+    z-index: -1;
     background: radial-gradient(50% 50% at 50% 50%, #7125CF 0%, rgba(113, 37, 207, 0) 100%);
  }
 .learn-button{
@@ -1079,41 +1079,42 @@ canvas {
 }
 
 .software-serivce-card{
-    background-color: var(--primary-color);
+    background-color: #A358FF;
+    height: auto;
 }
-.software-serivce-image .shape_image{
-    position: absolute;
-    width: 100%;
-    z-index: -1;
-    top: -20%;
+.software-serivce-image{
+    background-color: var(--primary-color);
 }
 .marketing-serivce-image::before{
     content: '';
     position: absolute;
     z-index: -1;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    background-color: var(--back-color);
-    left: 50%;
-    top: 0;
-    transform: translate(-50%,-10%);
-}
-.seo-serivce-card{
-    background: linear-gradient(to bottom,#7C1ED4,#4B0477);
-}
-.seo-serivce-image{
-    position: absolute;
-    bottom: 50%;
-}
-.seo-serivce-image::before{
-    content: '';
-    position: absolute;
     width: 200px;
     height: 200px;
-    background: linear-gradient(180deg, #4B0477 24.04%, #7C1ED4 100%);
-    z-index: -1;
     border-radius: 50%;
+    background-color: var(--back-color);
+    left: 0;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.marketing-serivce-image-2::before{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: var(--back-color);
+    right: 0;
+    top: 50%;
+    transform: translate(50%,-50%);
+}
+.seo-serivce-card > img{
+    transform: rotate(-20deg);
+    width: 90%;
+}
+.seo-serivce-image{
+    bottom: 45%;
 }
 .e-commerse-serivce-card{
     background-color: white;
