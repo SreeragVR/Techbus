@@ -149,12 +149,14 @@ const vdoBox = document.querySelector('.video-container')
 const vdoClose = document.querySelector('.vdo-close') 
 const vdoPlay = document.querySelector('.play-button') 
 const bannerContainer = document.querySelector('.hero-banner') 
+const roboContainer = document.querySelector('.robo-container') 
 
-if(roboVdo && vdoBox && vdoClose && vdoPlay && bannerContainer){
+if(roboVdo && vdoBox && vdoClose && vdoPlay && bannerContainer && roboContainer){
   vdoPlay.addEventListener('click', ()=>{
     vdoBox.classList.add('full-vdo-screen')
     vdoClose.classList.remove('hidden')
     bannerContainer.classList.add('z-11')
+    roboContainer.classList.remove('z-4')
     vdoPlay.classList.add('no-vissible')
     roboVdo.muted = false
     roboVdo.currentTime = 0
@@ -163,6 +165,7 @@ if(roboVdo && vdoBox && vdoClose && vdoPlay && bannerContainer){
   vdoClose.addEventListener('click',()=>{
     vdoBox.classList.remove('full-vdo-screen')
     bannerContainer.classList.remove('z-11')
+    roboContainer.classList.add('z-4')
     vdoClose.classList.add('hidden')
     vdoPlay.classList.remove('no-vissible')
     roboVdo.muted = true
@@ -218,7 +221,38 @@ scrollingElements('top-show','.from-top')
 scrollingElements('right-show','.from-right')
 scrollingElementsQuick('bottom-show','.from-bottom')
 
+// SERVICE ANIMATION
 
+function serviceCardScrolling(showClass, elementClass, thresholdNumber = 0.5) {
+  const elements = document.querySelectorAll(elementClass)
+  if (!elements.length) return
 
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add(showClass)
+        observer.unobserve(entry.target)
+      }
+    })
+  }, { threshold: thresholdNumber })
+
+  elements.forEach(el => observer.observe(el))
+}
+
+serviceCardScrolling('software-ani-end-1', '.software-ani-1', 0.5)
+serviceCardScrolling('software-ani-end-2', '.software-ani-2', 0.5)
+serviceCardScrolling('software-ani-end-3', '.software-ani-3', 0.5)
+serviceCardScrolling('software-ani-end-4', '.software-ani-4', 0.5)
+serviceCardScrolling('branding-ani-end-2', '.branding-ani-2', 0.5)
+serviceCardScrolling('branding-ani-end-3', '.branding-ani-3', 0.5)
+serviceCardScrolling('branding-ani-end-4', '.branding-ani-4', 0.5)
+serviceCardScrolling('branding-ani-end-5', '.branding-ani-5', 0.5)
+serviceCardScrolling('seo-ani-end-1', '.seo-ani-1', 0.5)
+serviceCardScrolling('seo-ani-end-2', '.seo-ani-2', 0.5)
+serviceCardScrolling('seo-ani-end-3', '.seo-ani-3', 0.5)
+serviceCardScrolling('seo-ani-end-4', '.seo-ani-4', 0.5)
+serviceCardScrolling('seo-ani-end-5', '.seo-ani-5', 0.5)
+serviceCardScrolling('seo-ani-end-6', '.seo-ani-6', 0.5)
+serviceCardScrolling('seo-ani-end-7', '.seo-ani-7', 0.5)
 
 })
