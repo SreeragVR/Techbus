@@ -18,16 +18,97 @@ document.addEventListener('DOMContentLoaded', ()=>{
         })
     }
 
-    // const backColor = document.querySelector('.back_color')
-    // if(backColor){
-    //     document.addEventListener('scroll',()=>{
-    //     if(scrollY > 20){
-    //         backColor.classList.add('expand-transition')
-    //     }else{
-    //         backColor.classList.remove('expand-transition')
-    //     }
-    //     })
-    // }
+    const dropDown = document.querySelector('.drop-down')
+    const dropButton = document.querySelector('.drop-button')
+    const dropListBox = document.querySelector('.drop-down-list')
+
+    if(dropDown && dropButton && dropListBox){
+      const dropIcon = dropButton.querySelector('svg')
+      const links = dropDown.querySelectorAll('.drop-link')
+      dropButton.addEventListener('click',(e)=>{
+        e.stopPropagation()
+        dropListBox.classList.toggle('drop-active')
+        dropIcon.classList.toggle('rotate-icon')
+      })
+      links.forEach((link)=>{
+        link.addEventListener('click',(e)=>{
+          e.stopPropagation()
+        })
+      })
+      document.addEventListener('click', () => {
+      dropListBox.classList.remove('drop-active')
+      dropIcon.classList.remove('rotate-icon')
+      })
+    }
+
+    const closeForm = document.querySelector('.close-popup')
+    const popContainer = document.querySelector('.popup-back')
+    const contactForm = document.querySelectorAll('.form-view')
+    if(popContainer && closeForm && contactForm){
+      const sendMessage = popContainer.querySelector('#sendOtp')
+      const formBox = popContainer.querySelector('#popForm')
+      const otpForm = popContainer.querySelector('#otpForm')
+      const otpButton = popContainer.querySelector('#otpConfirm')
+      const editButton = popContainer.querySelector('#editNumber')
+      const resendOtp = popContainer.querySelector('#resendOtp')
+      const resendTime = popContainer.querySelector('.resend-time')
+
+      contactForm.forEach((form)=>{
+        form.addEventListener('click', ()=>{
+          popContainer.classList.toggle('hidden')
+        })
+      })
+      closeForm.addEventListener('click', ()=>{
+        popContainer.classList.toggle('hidden')
+      })
+      sendMessage.addEventListener('click', ()=>{
+        otpForm.classList.remove('no-vissible')
+        formBox.classList.add('no-vissible')
+      })
+      editButton.addEventListener('click',()=>{
+        otpForm.classList.add('no-vissible')
+        formBox.classList.remove('no-vissible')
+      })
+
+      const otpInputs = document.querySelectorAll("#otpForm input")
+      otpInputs.forEach((input, index) => {
+        otpInputs[0].focus();
+        input.addEventListener("input", (e) => { 
+          e.target.value = e.target.value.replace(/\D/g, "")
+          if (e.target.value && index < otpInputs.length - 1) {
+            otpInputs[index + 1].focus()
+          }
+        })
+        input.addEventListener("keydown", (e) => {
+          if (e.key === "Backspace" && !input.value && index > 0) {
+            otpInputs[index - 1].focus()
+          }
+        })
+      })
+    }
+
+    const megaMenu = document.querySelector('.mega-menu')
+    const megaButton = document.querySelector('.mega-button')
+    const megaListBox = document.querySelector('.mega-menu-list')
+
+    if(megaButton && megaMenu && megaListBox){
+      const dropIcon = megaButton.querySelector('svg')
+      const linkBoxes = megaMenu.querySelectorAll('.mega-link-box')
+      megaButton.addEventListener('click',(e)=>{
+        e.stopPropagation()
+        megaListBox.classList.toggle('mega-active')
+        dropIcon.classList.toggle('rotate-icon')
+      })
+      linkBoxes.forEach((link)=>{
+        link.addEventListener('click',(e)=>{
+          e.stopPropagation()
+        })
+      })
+      document.addEventListener('click', () => {
+      megaListBox.classList.remove('mega-active')
+      dropIcon.classList.remove('rotate-icon')
+      })
+    }
 
     if(document.querySelector('.verticalSwiper')){
       const verticalSwiper = new Swiper(".verticalSwiper", {
@@ -152,7 +233,7 @@ const bannerContainer = document.querySelector('.hero-banner')
 const roboContainer = document.querySelector('.robo-container') 
 
 if(roboVdo && vdoBox && vdoClose && vdoPlay && bannerContainer && roboContainer){
-  vdoPlay.addEventListener('click', ()=>{
+  vdoBox.addEventListener('click', ()=>{
     vdoBox.classList.add('full-vdo-screen')
     vdoClose.classList.remove('hidden')
     bannerContainer.classList.add('z-11')
@@ -162,7 +243,8 @@ if(roboVdo && vdoBox && vdoClose && vdoPlay && bannerContainer && roboContainer)
     roboVdo.currentTime = 0
     document.body.style.overflow = "hidden"
   })
-  vdoClose.addEventListener('click',()=>{
+  vdoClose.addEventListener('click',(e)=>{
+    e.stopPropagation()
     vdoBox.classList.remove('full-vdo-screen')
     bannerContainer.classList.remove('z-11')
     roboContainer.classList.add('z-4')
