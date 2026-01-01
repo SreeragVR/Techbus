@@ -110,6 +110,60 @@ document.addEventListener('DOMContentLoaded', ()=>{
       })
     }
 
+    const iconContainer = document.querySelector(".home-hero")
+    const homeIcons = document.querySelectorAll(".home-icon")
+    if(iconContainer && homeIcons){
+      iconContainer.addEventListener("mousemove", (e) => {
+      const rect = iconContainer.getBoundingClientRect()
+      const x = e.clientX - rect.left - rect.width / 2
+      const y = e.clientY - rect.top - rect.height / 2
+      homeIcons.forEach((icon, index) => {
+        const depth = (index + 1) * 10
+        const moveX = (x / rect.width) * depth
+        const moveY = (y / rect.height) * depth
+
+        icon.style.transform = `translate3d(${moveX}px, ${moveY}px, 0)`
+      })
+    })
+    iconContainer.addEventListener("mouseleave", () => {
+      homeIcons.forEach(icon => {
+        icon.style.transform = "translate3d(0, 0, 0)"
+      })
+    })
+    }
+
+
+  const buttons = document.querySelectorAll('.service-btn');
+  const contents = document.querySelectorAll('.service-content');
+
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
+      // remove active from all
+      buttons.forEach(btn => btn.classList.remove('active'));
+      contents.forEach(content => content.classList.remove('active'));
+
+      // activate clicked
+      button.classList.add('active');
+      document.getElementById(button.dataset.target).classList.add('active');
+    })
+  })
+
+    if(document.querySelector('.homeserviceSwiper')){
+      const homeserviceSwiper = new Swiper(".homeserviceSwiper", {
+      slidesPerView: 5,
+      spaceBetween: 30,
+      freeMode: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+    }
+
     if(document.querySelector('.verticalSwiper')){
       const verticalSwiper = new Swiper(".verticalSwiper", {
         direction: "vertical",
