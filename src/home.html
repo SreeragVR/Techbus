@@ -19,7 +19,7 @@
     <!-- HEADER -->
      <header class="px-5 sm:px-7 md:px-9 lg:px-10 py-5 md:py-6 lg:py-8 fixed top-0 z-8 w-full from-top">
         <div class="flex items-center justify-between gap-4">
-            <a href="index.html">
+            <a href="home.html">
                 <img src="assets/TECHBUS_LOGO_WHITE.png" alt="LOGO" loading="lazy" class="h-9 md:h-10 lg:h-11 object-contain">
             </a>
 
@@ -155,231 +155,585 @@
         </div>
     </section>
 
-    <section class="px-5 sm:px-7 md:px-9 lg:px-10 py-12 sm:py-14 md:py-16 lg:py-20 xl:py-24  pattern-banner">
+    <section class="px-5 sm:px-7 md:px-9 lg:px-10 py-12 sm:py-14 md:py-16 lg:py-20 xl:py-24">
       <div class="flex flex-col justify-center items-center from-bottom">
         <h5 class="raleway text-lg sm:text-xl md:text-[22px] lg:text-[25px] text-[#C6C5B9] text-center mb-2 sm:mb-3">OUR SERVICES</h5>
-        <h2 class="rubik font-bold text-[32px] sm:text-[38px] md:text-[46px] lg:text-[52px]  xl:text-[56px] leading-[36px] sm:leading-[40px] md:leading-[44px] lg:leading-[56px] xl:leading-[60px] text-white text-center mb-3 sm:mb-5 md:mb-6"
+        <h2 class="rubik font-bold text-[32px] sm:text-[38px] md:text-[46px] lg:text-[52px]  xl:text-[56px] leading-[36px] sm:leading-[40px] md:leading-[44px] lg:leading-[56px] xl:leading-[60px] text-[var(--primary-color)] text-center mb-3 sm:mb-5 md:mb-6"
         >POWERING YOUR SUCCESS</h2>
-        <p class="raleway text-sm md:text-[15px] leading-[22px] md:leading-6 text-white text-center">
+        <p class="raleway text-sm md:text-[15px] leading-[22px] md:leading-6 text-[var(--primary-dark)] text-center">
           At Techbus, we provide end-to-end IT services that drive growth and digital transformation.
         </p>
       </div>
 
-      <div class="service-container text-white w-full mt-6 sm:mt-7 md:mt-8 relative z-2">
-
-        <div class="flex items-center gap-3.5">
-          <button class="px-6 py-3 service-btn active" data-target="software">SOFTWARE DEVELOPMENT</button>
-          <button class="px-6 py-3 service-btn" data-target="marketing">MARKETING SERVICES</button>
-          <button class="px-6 py-3 service-btn" data-target="seo">SEO SERVICE</button>
+      <div class="mt-6 sm:mt-8 md:mt-10 lg:mt-12">
+        <div class="flex items-center gap-1 mb-3.5 sm:mb-4 md:mb-5 lg:mb-6">
+          <span class="h-px bg-[#C4C0DE] flex-1 block"></span>
+          <h3 class="pro font-black text-lg sm:text-2xl md:text-3xl lg:text-[32px] text-[var(--primary-color)] text-center">SOFTWARE DEVELOPMENT</h3>
+          <span class="h-px bg-[#C4C0DE] flex-1 block"></span>
         </div>
 
-        <!-- SOFTWARE -->
-        <div class="service-content mt-4 sm:mt-6 active" id="software">
-
-          <div class="swiper homeserviceSwiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide"> 
-                <div class="service-card px-5 py-6 flex flex-col items-center">
-                  <img src="assets/images/service/software_development/custom_software_development.webp" alt="image" class="w-1/2" loading="lazy">
-                  <h4 class="rubik leading-5 font-semibold text-center mt-3.5 sm:mt-4 md:mt-5 mb-2.5">Custom Software Development</h4>
-                  <p class="raleway text-xs md:text-sm leading-5 text-center">ERP, CRM, inventory systems, billing software, HRMS, LMS, POS systems, and industry-specific applications.</p>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="service-card px-5 py-6 flex flex-col items-center">
-                  <img src="assets/images/service/software_development/mobile_application_development.webp" alt="image" class="w-1/2" loading="lazy">
-                  <h4 class="rubik leading-5 font-semibold text-center mt-3.5 sm:mt-4 md:mt-5 mb-2.5">Mobile Application Development</h4>
-                  <p class="raleway text-xs md:text-sm leading-5 text-center">Android & iOS, including business apps, e-commerce apps, service apps, booking apps, and customer engagement apps.</p>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="service-card px-5 py-6 flex flex-col items-center">
-                  <img src="assets/images/service/software_development/web_application_development.webp" alt="image" class="w-1/2" loading="lazy">
-                  <h4 class="rubik leading-5 font-semibold text-center mt-3.5 sm:mt-4 md:mt-5 mb-2.5">Web Application Development</h4>
-                  <p class="raleway text-xs md:text-sm leading-5 text-center">Dynamic web apps, portals, dashboards, SaaS platforms, booking systems, admin panels, and workflow automation applications.</p>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="service-card px-5 py-6 flex flex-col items-center">
-                  <img src="assets/images/service/software_development/website_design_development.webp" alt="image" class="w-1/2" loading="lazy">
-                  <h4 class="rubik leading-5 font-semibold text-center mt-3.5 sm:mt-4 md:mt-5 mb-2.5">Website Design & Development</h4>
-                  <p class="raleway text-xs md:text-sm leading-5 text-center">Corporate websites, e-commerce websites, portfolio sites, landing pages, responsive UI/UX designs, SEO-optimized websites.</p>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="service-card px-5 py-6 flex flex-col items-center">
-                  <img src="assets/images/service/software_development/API_development_Integration.webp" alt="image" class="w-1/2" loading="lazy">
-                  <h4 class="rubik leading-5 font-semibold text-center mt-3.5 sm:mt-4 md:mt-5 mb-2.5">API Development & Integration</h4>
-                  <p class="raleway text-xs md:text-sm leading-5 text-center">Custom API creation, third-party integration (payment gateways, WhatsApp, SMS, social logins, ERP connectors), automation & backend connectivity.</p>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="service-card px-5 py-6 flex flex-col items-center">
-                  <img src="assets/images/service/software_development/UI_UX_design_prototyping.webp" alt="image" class="w-1/2" loading="lazy">
-                  <h4 class="rubik leading-5 font-semibold text-center mt-3.5 sm:mt-4 md:mt-5 mb-2.5">UI/UX Design & Prototyping</h4>
-                  <p class="raleway text-xs md:text-sm leading-5 text-center">Wireframes, prototypes, user-centric interfaces, design systems, web & mobile UI kits, branding-aligned visual designs.</p>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="service-card px-5 py-6 flex flex-col items-center">
-                  <img src="assets/images/service/software_development/maintenance_support_services.webp" alt="image" class="w-1/2" loading="lazy">
-                  <h4 class="rubik leading-5 font-semibold text-center mt-3.5 sm:mt-4 md:mt-5 mb-2.5">Maintenance & Support Services</h4>
-                  <p class="raleway text-xs md:text-sm leading-5 text-center">Ongoing updates, bug fixing, security patches, performance optimization, server management, and SLA-based support.</p>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="service-card px-5 py-6 flex flex-col items-center">
-                  <img src="assets/images/service/software_development/cloud_devOps_solutions.webp" alt="image" class="w-1/2" loading="lazy">
-                  <h4 class="rubik leading-5 font-semibold text-center mt-3.5 sm:mt-4 md:mt-5 mb-2.5">Cloud & DevOps Solutions</h4>
-                  <p class="raleway text-xs md:text-sm leading-5 text-center">Cloud deployment, CI/CD pipelines, server setup, hosting management, containerization (Docker/Kubernetes), and scalable architecture design.</p>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
+        <div class="grid max-[400px]:grid-cols-1 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2.5 sm:gap-3 md:gap-4 lg:gap-5 xl:gap-6 text-white">
+          <div class="service-card px-3.5 sm:px-5 py-4 sm:py-6 flex flex-col items-center from-bottom">
+            <img src="assets/images/service/software_development/custom_software_development.webp" alt="image" class="w-1/2" loading="lazy">
+            <h4 class="rubik leading-5 font-semibold text-center mt-3.5 sm:mt-4 md:mt-5 mb-2.5">Custom Software Development</h4>
+            <p class="raleway text-xs md:text-sm leading-5 text-center">ERP, CRM, inventory systems, billing software, HRMS, LMS, POS systems, and industry-specific applications.</p>
           </div>
-
-        </div>
-
-        <!-- MARKETING -->
-        <div class="service-content mt-4 sm:mt-6" id="marketing">
-          <div class="swiper homeserviceSwiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide"> 
-                <div class="service-card px-5 py-6 flex flex-col items-center">
-                  <img src="assets/images/service/marketing/social_media_marketing_campaign_management.webp" alt="image" class="w-1/2" loading="lazy">
-                  <h4 class="rubik leading-5 font-semibold text-center mt-3.5 sm:mt-4 md:mt-5 mb-2.5">Social Media Marketing & Campaign Management</h4>
-                  <p class="raleway text-xs md:text-sm leading-5 text-center">Creating and managing campaigns across social platforms.</p>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="service-card px-5 py-6 flex flex-col items-center">
-                  <img src="assets/images/service/marketing/paid_advertising(PPC_Performance_Marketing).webp" alt="image" class="w-1/2" loading="lazy">
-                  <h4 class="rubik leading-5 font-semibold text-center mt-3.5 sm:mt-4 md:mt-5 mb-2.5">Paid Advertising (PPC & Performance Marketing)</h4>
-                  <p class="raleway text-xs md:text-sm leading-5 text-center">Google Ads, Meta Ads, retargeting campaigns, audience segmentation.</p>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="service-card px-5 py-6 flex flex-col items-center">
-                  <img src="assets/images/service/marketing/content_creation_creative_Ad_production.webp" alt="image" class="w-1/2" loading="lazy">
-                  <h4 class="rubik leading-5 font-semibold text-center mt-3.5 sm:mt-4 md:mt-5 mb-2.5">Content Creation & Creative Ad Production</h4>
-                  <p class="raleway text-xs md:text-sm leading-5 text-center">Social media creatives, animated ads, product videos, motion graphics.</p>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="service-card px-5 py-6 flex flex-col items-center">
-                  <img src="assets/images/service/marketing/email_marketing_automation.webp" alt="image" class="w-1/2" loading="lazy">
-                  <h4 class="rubik leading-5 font-semibold text-center mt-3.5 sm:mt-4 md:mt-5 mb-2.5">Email Marketing & Automation</h4>
-                  <p class="raleway text-xs md:text-sm leading-5 text-center">Newsletters, workflows, drip campaigns, segmentation & analytics.</p>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="service-card px-5 py-6 flex flex-col items-center">
-                  <img src="assets/images/service/marketing/SMS_whatsApp_marketing_automation.webp" alt="image" class="w-1/2" loading="lazy">
-                  <h4 class="rubik leading-5 font-semibold text-center mt-3.5 sm:mt-4 md:mt-5 mb-2.5">SMS & WhatsApp Marketing Automation</h4>
-                  <p class="raleway text-xs md:text-sm leading-5 text-center">Bulk messaging, promotional campaigns, API-based automation.</p>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="service-card px-5 py-6 flex flex-col items-center">
-                  <img src="assets/images/service/marketing/Influencer_affiliate_marketing_management.webp" alt="image" class="w-1/2" loading="lazy">
-                  <h4 class="rubik leading-5 font-semibold text-center mt-3.5 sm:mt-4 md:mt-5 mb-2.5">Influencer & Affiliate Marketing Management</h4>
-                  <p class="raleway text-xs md:text-sm leading-5 text-center">Collaboration planning, influencer sourcing, affiliate tracking.</p>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="service-card px-5 py-6 flex flex-col items-center">
-                  <img src="assets/images/service/marketing/lead_generation_funnel_building.webp" alt="image" class="w-1/2" loading="lazy">
-                  <h4 class="rubik leading-5 font-semibold text-center mt-3.5 sm:mt-4 md:mt-5 mb-2.5">Lead Generation & Funnel Building</h4>
-                  <p class="raleway text-xs md:text-sm leading-5 text-center">Landing pages, ad funnels, conversion flow, CRM integration.</p>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="service-card px-5 py-6 flex flex-col items-center">
-                  <img src="assets/images/service/marketing/reputation_review_management.webp" alt="image" class="w-1/2" loading="lazy">
-                  <h4 class="rubik leading-5 font-semibold text-center mt-3.5 sm:mt-4 md:mt-5 mb-2.5">Reputation & Review Management</h4>
-                  <p class="raleway text-xs md:text-sm leading-5 text-center">Managing online reviews, feedback systems, rating platform optimization.</p>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
+          <div class="service-card px-3.5 sm:px-5 py-4 sm:py-6 flex flex-col items-center from-bottom">
+            <img src="assets/images/service/software_development/mobile_application_development.webp" alt="image" class="w-1/2" loading="lazy">
+            <h4 class="rubik leading-5 font-semibold text-center mt-3.5 sm:mt-4 md:mt-5 mb-2.5">Mobile Application Development</h4>
+            <p class="raleway text-xs md:text-sm leading-5 text-center">Android & iOS, including business apps, e-commerce apps, service apps, booking apps, and customer engagement apps.</p>
           </div>
-        </div>
-
-        <!-- SEO -->
-        <div class="service-content mt-4 sm:mt-6" id="seo">
-          <div class="swiper homeserviceSwiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide"> 
-                <div class="service-card px-5 py-6 flex flex-col items-center">
-                  <img src="assets/images/service/software_development/custom_software_development.webp" alt="image" class="w-1/2" loading="lazy">
-                  <h4 class="rubik leading-5 font-semibold text-center mt-3.5 sm:mt-4 md:mt-5 mb-2.5">Custom Software Development</h4>
-                  <p class="raleway text-xs md:text-sm leading-5 text-center">ERP, CRM, inventory systems, billing software, HRMS, LMS, POS systems, and industry-specific applications.</p>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="service-card px-5 py-6 flex flex-col items-center">
-                  <img src="assets/images/service/software_development/mobile_application_development.webp" alt="image" class="w-1/2" loading="lazy">
-                  <h4 class="rubik leading-5 font-semibold text-center mt-3.5 sm:mt-4 md:mt-5 mb-2.5">Mobile Application Development</h4>
-                  <p class="raleway text-xs md:text-sm leading-5 text-center">Android & iOS, including business apps, e-commerce apps, service apps, booking apps, and customer engagement apps.</p>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="service-card px-5 py-6 flex flex-col items-center">
-                  <img src="assets/images/service/software_development/web_application_development.webp" alt="image" class="w-1/2" loading="lazy">
-                  <h4 class="rubik leading-5 font-semibold text-center mt-3.5 sm:mt-4 md:mt-5 mb-2.5">Web Application Development</h4>
-                  <p class="raleway text-xs md:text-sm leading-5 text-center">Dynamic web apps, portals, dashboards, SaaS platforms, booking systems, admin panels, and workflow automation applications.</p>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="service-card px-5 py-6 flex flex-col items-center">
-                  <img src="assets/images/service/software_development/website_design_development.webp" alt="image" class="w-1/2" loading="lazy">
-                  <h4 class="rubik leading-5 font-semibold text-center mt-3.5 sm:mt-4 md:mt-5 mb-2.5">Website Design & Development</h4>
-                  <p class="raleway text-xs md:text-sm leading-5 text-center">Corporate websites, e-commerce websites, portfolio sites, landing pages, responsive UI/UX designs, SEO-optimized websites.</p>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="service-card px-5 py-6 flex flex-col items-center">
-                  <img src="assets/images/service/software_development/API_development_Integration.webp" alt="image" class="w-1/2" loading="lazy">
-                  <h4 class="rubik leading-5 font-semibold text-center mt-3.5 sm:mt-4 md:mt-5 mb-2.5">API Development & Integration</h4>
-                  <p class="raleway text-xs md:text-sm leading-5 text-center">Custom API creation, third-party integration (payment gateways, WhatsApp, SMS, social logins, ERP connectors), automation & backend connectivity.</p>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="service-card px-5 py-6 flex flex-col items-center">
-                  <img src="assets/images/service/software_development/UI_UX_design_prototyping.webp" alt="image" class="w-1/2" loading="lazy">
-                  <h4 class="rubik leading-5 font-semibold text-center mt-3.5 sm:mt-4 md:mt-5 mb-2.5">UI/UX Design & Prototyping</h4>
-                  <p class="raleway text-xs md:text-sm leading-5 text-center">Wireframes, prototypes, user-centric interfaces, design systems, web & mobile UI kits, branding-aligned visual designs.</p>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="service-card px-5 py-6 flex flex-col items-center">
-                  <img src="assets/images/service/software_development/maintenance_support_services.webp" alt="image" class="w-1/2" loading="lazy">
-                  <h4 class="rubik leading-5 font-semibold text-center mt-3.5 sm:mt-4 md:mt-5 mb-2.5">Maintenance & Support Services</h4>
-                  <p class="raleway text-xs md:text-sm leading-5 text-center">Ongoing updates, bug fixing, security patches, performance optimization, server management, and SLA-based support.</p>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="service-card px-5 py-6 flex flex-col items-center">
-                  <img src="assets/images/service/software_development/cloud_devOps_solutions.webp" alt="image" class="w-1/2" loading="lazy">
-                  <h4 class="rubik leading-5 font-semibold text-center mt-3.5 sm:mt-4 md:mt-5 mb-2.5">Cloud & DevOps Solutions</h4>
-                  <p class="raleway text-xs md:text-sm leading-5 text-center">Cloud deployment, CI/CD pipelines, server setup, hosting management, containerization (Docker/Kubernetes), and scalable architecture design.</p>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
+          <div class="service-card px-3.5 sm:px-5 py-4 sm:py-6 flex flex-col items-center from-bottom">
+            <img src="assets/images/service/software_development/web_application_development.webp" alt="image" class="w-1/2" loading="lazy">
+            <h4 class="rubik leading-5 font-semibold text-center mt-3.5 sm:mt-4 md:mt-5 mb-2.5">Web Application Development</h4>
+            <p class="raleway text-xs md:text-sm leading-5 text-center">Dynamic web apps, portals, dashboards, SaaS platforms, booking systems, admin panels, and workflow automation applications.</p>
           </div>
+          <div class="service-card px-3.5 sm:px-5 py-4 sm:py-6 flex flex-col items-center from-bottom">
+            <img src="assets/images/service/software_development/website_design_development.webp" alt="image" class="w-1/2" loading="lazy">
+            <h4 class="rubik leading-5 font-semibold text-center mt-3.5 sm:mt-4 md:mt-5 mb-2.5">Website Design & Development</h4>
+            <p class="raleway text-xs md:text-sm leading-5 text-center">Corporate websites, e-commerce websites, portfolio sites, landing pages, responsive UI/UX designs, SEO-optimized websites.</p>
+          </div>  
+          <div class="service-card px-3.5 sm:px-5 py-4 sm:py-6 flex flex-col items-center from-bottom">
+            <img src="assets/images/service/software_development/API_development_Integration.webp" alt="image" class="w-1/2" loading="lazy">
+            <h4 class="rubik leading-5 font-semibold text-center mt-3.5 sm:mt-4 md:mt-5 mb-2.5">API Development & Integration</h4>
+            <p class="raleway text-xs md:text-sm leading-5 text-center">Custom API creation, third-party integration (payment gateways, WhatsApp, SMS, social logins, ERP connectors), automation & backend connectivity.</p>
+          </div>    
+          <div class="service-card px-3.5 sm:px-5 py-4 sm:py-6 flex flex-col items-center from-bottom">
+            <img src="assets/images/service/software_development/UI_UX_design_prototyping.webp" alt="image" class="w-1/2" loading="lazy">
+            <h4 class="rubik leading-5 font-semibold text-center mt-3.5 sm:mt-4 md:mt-5 mb-2.5">UI/UX Design & Prototyping</h4>
+            <p class="raleway text-xs md:text-sm leading-5 text-center">Wireframes, prototypes, user-centric interfaces, design systems, web & mobile UI kits, branding-aligned visual designs.</p>
+          </div>  
+          <div class="service-card px-3.5 sm:px-5 py-4 sm:py-6 flex flex-col items-center from-bottom">
+            <img src="assets/images/service/software_development/maintenance_support_services.webp" alt="image" class="w-1/2" loading="lazy">
+            <h4 class="rubik leading-5 font-semibold text-center mt-3.5 sm:mt-4 md:mt-5 mb-2.5">Maintenance & Support Services</h4>
+            <p class="raleway text-xs md:text-sm leading-5 text-center">Ongoing updates, bug fixing, security patches, performance optimization, server management, and SLA-based support.</p>
+          </div> 
+          <div class="service-card px-3.5 sm:px-5 py-4 sm:py-6 flex flex-col items-center from-bottom">
+            <img src="assets/images/service/software_development/cloud_devOps_solutions.webp" alt="image" class="w-1/2" loading="lazy">
+            <h4 class="rubik leading-5 font-semibold text-center mt-3.5 sm:mt-4 md:mt-5 mb-2.5">Cloud & DevOps Solutions</h4>
+            <p class="raleway text-xs md:text-sm leading-5 text-center">Cloud deployment, CI/CD pipelines, server setup, hosting management, containerization (Docker/Kubernetes), and scalable architecture design.</p>
+          </div>
+          
         </div>
-
-
       </div>
 
+      <div class="mt-6 sm:mt-8 md:mt-10 lg:mt-12">
+        <div class="flex items-center gap-1 mb-3.5 sm:mb-4 md:mb-5 lg:mb-6">
+          <span class="h-px bg-[#C4C0DE] flex-1 block"></span>
+          <h3 class="pro font-black text-lg sm:text-2xl md:text-3xl lg:text-[32px] text-[var(--primary-color)] text-center">MARKETING SERVICES</h3>
+          <span class="h-px bg-[#C4C0DE] flex-1 block"></span>
+        </div>
+
+        <div class="grid max-[400px]:grid-cols-1 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2.5 sm:gap-3 md:gap-4 lg:gap-5 xl:gap-6 text-white">
+          <div class="service-card px-3.5 sm:px-5 py-4 sm:py-6 flex flex-col items-center from-bottom">
+            <img src="assets/images/service/marketing/social_media_marketing_campaign_management.webp" alt="image" class="w-1/2" loading="lazy">
+            <h4 class="rubik leading-5 font-semibold text-center mt-3.5 sm:mt-4 md:mt-5 mb-2.5">Social Media Marketing & Campaign Management</h4>
+            <p class="raleway text-xs md:text-sm leading-5 text-center">Creating and managing campaigns across social platforms.</p>
+          </div>
+          <div class="service-card px-3.5 sm:px-5 py-4 sm:py-6 flex flex-col items-center from-bottom">
+            <img src="assets/images/service/marketing/paid_advertising(PPC_Performance_Marketing).webp" alt="image" class="w-1/2" loading="lazy">
+            <h4 class="rubik leading-5 font-semibold text-center mt-3.5 sm:mt-4 md:mt-5 mb-2.5">Paid Advertising (PPC & Performance Marketing)</h4>
+            <p class="raleway text-xs md:text-sm leading-5 text-center">Google Ads, Meta Ads, retargeting campaigns, audience segmentation.</p>
+          </div>
+          <div class="service-card px-3.5 sm:px-5 py-4 sm:py-6 flex flex-col items-center from-bottom">
+            <img src="assets/images/service/marketing/content_creation_creative_Ad_production.webp" alt="image" class="w-1/2" loading="lazy">
+            <h4 class="rubik leading-5 font-semibold text-center mt-3.5 sm:mt-4 md:mt-5 mb-2.5">Content Creation & Creative Ad Production</h4>
+            <p class="raleway text-xs md:text-sm leading-5 text-center">Social media creatives, animated ads, product videos, motion graphics.</p>
+          </div>
+          <div class="service-card px-3.5 sm:px-5 py-4 sm:py-6 flex flex-col items-center from-bottom">
+            <img src="assets/images/service/marketing/email_marketing_automation.webp" alt="image" class="w-1/2" loading="lazy">
+            <h4 class="rubik leading-5 font-semibold text-center mt-3.5 sm:mt-4 md:mt-5 mb-2.5">Email Marketing & Automation</h4>
+            <p class="raleway text-xs md:text-sm leading-5 text-center">Newsletters, workflows, drip campaigns, segmentation & analytics.</p>
+          </div> 
+          <div class="service-card px-3.5 sm:px-5 py-4 sm:py-6 flex flex-col items-center from-bottom">
+            <img src="assets/images/service/marketing/SMS_whatsApp_marketing_automation.webp" alt="image" class="w-1/2" loading="lazy">
+            <h4 class="rubik leading-5 font-semibold text-center mt-3.5 sm:mt-4 md:mt-5 mb-2.5">SMS & WhatsApp Marketing Automation</h4>
+            <p class="raleway text-xs md:text-sm leading-5 text-center">Bulk messaging, promotional campaigns, API-based automation.</p>
+          </div>   
+          <div class="service-card px-3.5 sm:px-5 py-4 sm:py-6 flex flex-col items-center from-bottom">
+            <img src="assets/images/service/marketing/Influencer_affiliate_marketing_management.webp" alt="image" class="w-1/2" loading="lazy">
+            <h4 class="rubik leading-5 font-semibold text-center mt-3.5 sm:mt-4 md:mt-5 mb-2.5">Influencer & Affiliate Marketing Management</h4>
+            <p class="raleway text-xs md:text-sm leading-5 text-center">Collaboration planning, influencer sourcing, affiliate tracking.</p>
+          </div> 
+          <div class="service-card px-3.5 sm:px-5 py-4 sm:py-6 flex flex-col items-center from-bottom">
+            <img src="assets/images/service/marketing/lead_generation_funnel_building.webp" alt="image" class="w-1/2" loading="lazy">
+            <h4 class="rubik leading-5 font-semibold text-center mt-3.5 sm:mt-4 md:mt-5 mb-2.5">Lead Generation & Funnel Building</h4>
+            <p class="raleway text-xs md:text-sm leading-5 text-center">Landing pages, ad funnels, conversion flow, CRM integration.</p>
+          </div>
+          <div class="service-card px-3.5 sm:px-5 py-4 sm:py-6 flex flex-col items-center from-bottom">
+            <img src="assets/images/service/marketing/reputation_review_management.webp" alt="image" class="w-1/2" loading="lazy">
+            <h4 class="rubik leading-5 font-semibold text-center mt-3.5 sm:mt-4 md:mt-5 mb-2.5">Reputation & Review Management</h4>
+            <p class="raleway text-xs md:text-sm leading-5 text-center">Managing online reviews, feedback systems, rating platform optimization.</p>
+          </div>  
+        </div>
+      </div>
+
+      <div class="mt-6 sm:mt-8 md:mt-10 lg:mt-12">
+        <div class="flex items-center gap-1 mb-3.5 sm:mb-4 md:mb-5 lg:mb-6">
+          <span class="h-px bg-[#C4C0DE] flex-1 block"></span>
+          <h3 class="pro font-black text-lg sm:text-2xl md:text-3xl lg:text-[32px] text-[var(--primary-color)] text-center">SEO SERVICES</h3>
+          <span class="h-px bg-[#C4C0DE] flex-1 block"></span>
+        </div>
+
+        <div class="grid max-[400px]:grid-cols-1 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2.5 sm:gap-3 md:gap-4 lg:gap-5 xl:gap-6 text-white">
+          <div class="service-card px-3.5 sm:px-5 py-4 sm:py-6 flex flex-col items-center from-bottom">
+            <img src="assets/images/service/seo/on-page_seo_optimization.webp" alt="image" class="w-1/2" loading="lazy">
+            <h4 class="rubik leading-5 font-semibold text-center mt-3.5 sm:mt-4 md:mt-5 mb-2.5">On-Page SEO Optimization</h4>
+            <p class="raleway text-xs md:text-sm leading-5 text-center">Meta tags, keyword placement, content optimization, site structure improvements.</p>
+          </div>
+          <div class="service-card px-3.5 sm:px-5 py-4 sm:py-6 flex flex-col items-center from-bottom">
+            <img src="assets/images/service/seo/technical_seo_audits_fixes.webp" alt="image" class="w-1/2" loading="lazy">
+            <h4 class="rubik leading-5 font-semibold text-center mt-3.5 sm:mt-4 md:mt-5 mb-2.5">Technical SEO Audits & Fixes</h4>
+            <p class="raleway text-xs md:text-sm leading-5 text-center">Speed optimization, crawlability, schema markup, indexation, broken link fixes.</p>
+          </div>
+          <div class="service-card px-3.5 sm:px-5 py-4 sm:py-6 flex flex-col items-center from-bottom">
+            <img src="assets/images/service/seo/off-page_seo_link_building.webp" alt="image" class="w-1/2" loading="lazy">
+            <h4 class="rubik leading-5 font-semibold text-center mt-3.5 sm:mt-4 md:mt-5 mb-2.5">Off-Page SEO & Link Building</h4>
+            <p class="raleway text-xs md:text-sm leading-5 text-center">High-quality backlinks, guest posts, directory submissions, authority building.</p>
+          </div>
+          <div class="service-card px-3.5 sm:px-5 py-4 sm:py-6 flex flex-col items-center from-bottom">
+            <img src="assets/images/service/seo/local_seo_optimization.webp" alt="image" class="w-1/2" loading="lazy">
+            <h4 class="rubik leading-5 font-semibold text-center mt-3.5 sm:mt-4 md:mt-5 mb-2.5">Local SEO Optimization</h4>
+            <p class="raleway text-xs md:text-sm leading-5 text-center">Google Business Profile setup, local citations, local ranking improvements.</p>
+          </div> 
+          <div class="service-card px-3.5 sm:px-5 py-4 sm:py-6 flex flex-col items-center from-bottom">
+            <img src="assets/images/service/seo/e-commerce_seo.webp" alt="image" class="w-1/2" loading="lazy">
+            <h4 class="rubik leading-5 font-semibold text-center mt-3.5 sm:mt-4 md:mt-5 mb-2.5">E-commerce SEO</h4>
+            <p class="raleway text-xs md:text-sm leading-5 text-center">Product page optimization, schema for products, category SEO, conversion improvements.</p>
+          </div>   
+          <div class="service-card px-3.5 sm:px-5 py-4 sm:py-6 flex flex-col items-center from-bottom">
+            <img src="assets/images/service/seo/keyword_research_competitor_analysis.webp" alt="image" class="w-1/2" loading="lazy">
+            <h4 class="rubik leading-5 font-semibold text-center mt-3.5 sm:mt-4 md:mt-5 mb-2.5">Keyword Research & Competitor Analysis</h4>
+            <p class="raleway text-xs md:text-sm leading-5 text-center">Finding profitable keywords, competitor insights, gap identification.</p>
+          </div> 
+          <div class="service-card px-3.5 sm:px-5 py-4 sm:py-6 flex flex-col items-center from-bottom">
+            <img src="assets/images/service/seo/seo_content_strategy_blog_optimization.webp" alt="image" class="w-1/2" loading="lazy">
+            <h4 class="rubik leading-5 font-semibold text-center mt-3.5 sm:mt-4 md:mt-5 mb-2.5">SEO Content Strategy & Blog Optimization</h4>
+            <p class="raleway text-xs md:text-sm leading-5 text-center">SEO-friendly content plans, article optimization, topic clustering.</p>
+          </div>
+          <div class="service-card px-3.5 sm:px-5 py-4 sm:py-6 flex flex-col items-center from-bottom">
+            <img src="assets/images/service/seo/analytics_reporting_ranking_monitoring.webp" alt="image" class="w-1/2" loading="lazy">
+            <h4 class="rubik leading-5 font-semibold text-center mt-3.5 sm:mt-4 md:mt-5 mb-2.5">Analytics, Reporting & Ranking Monitoring</h4>
+            <p class="raleway text-xs md:text-sm leading-5 text-center">Monthly SEO reports, KPI tracking, ranking analysis, traffic insights.</p>
+          </div>  
+        </div>
+      </div>
+
+      <div class="mt-6 sm:mt-8 md:mt-10 lg:mt-12">
+        <div class="flex items-center gap-1 mb-3.5 sm:mb-4 md:mb-5 lg:mb-6">
+          <span class="h-px bg-[#C4C0DE] flex-1 block"></span>
+          <h3 class="pro font-black text-lg sm:text-2xl md:text-3xl lg:text-[32px] text-[var(--primary-color)] text-center">BRANDING SERVICES</h3>
+          <span class="h-px bg-[#C4C0DE] flex-1 block"></span>
+        </div>
+
+        <div class="grid max-[400px]:grid-cols-1 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2.5 sm:gap-3 md:gap-4 lg:gap-5 xl:gap-6 text-white">
+          <div class="service-card px-3.5 sm:px-5 py-4 sm:py-6 flex flex-col items-center from-bottom">
+            <img src="assets/images/service/branding/logo_design_brand_identity_creation.webp" alt="image" class="w-1/2" loading="lazy">
+            <h4 class="rubik leading-5 font-semibold text-center mt-3.5 sm:mt-4 md:mt-5 mb-2.5">Logo Design & Brand Identity Creation</h4>
+            <p class="raleway text-xs md:text-sm leading-5 text-center">Professional logo, brand shapes, color palette, and visual identity.</p>
+          </div>
+          <div class="service-card px-3.5 sm:px-5 py-4 sm:py-6 flex flex-col items-center from-bottom">
+            <img src="assets/images/service/branding/brand_guidelines_documentation.webp" alt="image" class="w-1/2" loading="lazy">
+            <h4 class="rubik leading-5 font-semibold text-center mt-3.5 sm:mt-4 md:mt-5 mb-2.5">Brand Guidelines & Documentation</h4>
+            <p class="raleway text-xs md:text-sm leading-5 text-center">Fonts, color rules, visual standards, and usage guidelines.</p>
+          </div>
+          <div class="service-card px-3.5 sm:px-5 py-4 sm:py-6 flex flex-col items-center from-bottom">
+            <img src="assets/images/service/branding/corporate_stationery_design.webp" alt="image" class="w-1/2" loading="lazy">
+            <h4 class="rubik leading-5 font-semibold text-center mt-3.5 sm:mt-4 md:mt-5 mb-2.5">Corporate Stationery Design</h4>
+            <p class="raleway text-xs md:text-sm leading-5 text-center">Business cards, letterheads, envelopes, ID cards, invoice templates.</p>
+          </div>
+          <div class="service-card px-3.5 sm:px-5 py-4 sm:py-6 flex flex-col items-center from-bottom">
+            <img src="assets/images/service/branding/packaging_design.webp" alt="image" class="w-1/2" loading="lazy">
+            <h4 class="rubik leading-5 font-semibold text-center mt-3.5 sm:mt-4 md:mt-5 mb-2.5">Packaging Design</h4>
+            <p class="raleway text-xs md:text-sm leading-5 text-center">Product packaging, labels, box design, and retail-ready branding.</p>
+          </div> 
+          <div class="service-card px-3.5 sm:px-5 py-4 sm:py-6 flex flex-col items-center from-bottom">
+            <img src="assets/images/service/branding/social_media_brand_kit.webp" alt="image" class="w-1/2" loading="lazy">
+            <h4 class="rubik leading-5 font-semibold text-center mt-3.5 sm:mt-4 md:mt-5 mb-2.5">Social Media Brand Kit</h4>
+            <p class="raleway text-xs md:text-sm leading-5 text-center">Profile designs, cover images, post templates, icon sets.</p>
+          </div>   
+          <div class="service-card px-3.5 sm:px-5 py-4 sm:py-6 flex flex-col items-center from-bottom">
+            <img src="assets/images/service/branding/brand_strategy_positioning.webp" alt="image" class="w-1/2" loading="lazy">
+            <h4 class="rubik leading-5 font-semibold text-center mt-3.5 sm:mt-4 md:mt-5 mb-2.5">Brand Strategy & Positioning</h4>
+            <p class="raleway text-xs md:text-sm leading-5 text-center">Brand voice, tone, market positioning, competitor differentiation.</p>
+          </div> 
+          <div class="service-card px-3.5 sm:px-5 py-4 sm:py-6 flex flex-col items-center from-bottom">
+            <img src="assets/images/service/branding/creative_advertising_design.webp" alt="image" class="w-1/2" loading="lazy">
+            <h4 class="rubik leading-5 font-semibold text-center mt-3.5 sm:mt-4 md:mt-5 mb-2.5">Creative Advertising Design</h4>
+            <p class="raleway text-xs md:text-sm leading-5 text-center">Posters, banners, billboards, print ads, digital creative ads.</p>
+          </div>
+          <div class="service-card px-3.5 sm:px-5 py-4 sm:py-6 flex flex-col items-center from-bottom">
+            <img src="assets/images/service/branding/UIUX_branding_for_websites_apps.webp" alt="image" class="w-1/2" loading="lazy">
+            <h4 class="rubik leading-5 font-semibold text-center mt-3.5 sm:mt-4 md:mt-5 mb-2.5">UI/UX Branding for Websites & Apps</h4>
+            <p class="raleway text-xs md:text-sm leading-5 text-center">Brand-consistent UI elements, design systems, theme styling.</p>
+          </div>  
+        </div>
+      </div>
+
+      <div class="mt-6 sm:mt-8 md:mt-10 lg:mt-12">
+        <div class="flex items-center gap-1 mb-3.5 sm:mb-4 md:mb-5 lg:mb-6">
+          <span class="h-px bg-[#C4C0DE] flex-1 block"></span>
+          <h3 class="pro font-black text-lg sm:text-2xl md:text-3xl lg:text-[32px] text-[var(--primary-color)] text-center">E-COMMERCE SERVICES</h3>
+          <span class="h-px bg-[#C4C0DE] flex-1 block"></span>
+        </div>
+
+        <div class="grid max-[400px]:grid-cols-1 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2.5 sm:gap-3 md:gap-4 lg:gap-5 xl:gap-6 text-white">
+          <div class="service-card px-3.5 sm:px-5 py-4 sm:py-6 flex flex-col items-center from-bottom">
+            <img src="assets/images/service/e-commerce/e-commerce_website_app_development.webp" alt="image" class="w-1/2" loading="lazy">
+            <h4 class="rubik leading-5 font-semibold text-center mt-3.5 sm:mt-4 md:mt-5 mb-2.5">E-commerce Website & App Development</h4>
+            <p class="raleway text-xs md:text-sm leading-5 text-center">Custom online store creation with product, order, payment, and delivery modules.</p>
+          </div>
+          <div class="service-card px-3.5 sm:px-5 py-4 sm:py-6 flex flex-col items-center from-bottom">
+            <img src="assets/images/service/e-commerce/marketplace_development_(multi_vendor_platforms).webp" alt="image" class="w-1/2" loading="lazy">
+            <h4 class="rubik leading-5 font-semibold text-center mt-3.5 sm:mt-4 md:mt-5 mb-2.5">Marketplace Development (Multi-Vendor Platforms)</h4>
+            <p class="raleway text-xs md:text-sm leading-5 text-center">Amazon/Flipkart-style multi-vendor systems with vendor dashboards.</p>
+          </div>
+          <div class="service-card px-3.5 sm:px-5 py-4 sm:py-6 flex flex-col items-center from-bottom">
+            <img src="assets/images/service/e-commerce/payment_gateway_integration.webp" alt="image" class="w-1/2" loading="lazy">
+            <h4 class="rubik leading-5 font-semibold text-center mt-3.5 sm:mt-4 md:mt-5 mb-2.5">Payment Gateway Integration</h4>
+            <p class="raleway text-xs md:text-sm leading-5 text-center">UPI, cards, wallets, net banking, Razorpay/Stripe/PayPal integrations.</p>
+          </div>
+          <div class="service-card px-3.5 sm:px-5 py-4 sm:py-6 flex flex-col items-center from-bottom">
+            <img src="assets/images/service/e-commerce/inventory_stock_management_systems.webp" alt="image" class="w-1/2" loading="lazy">
+            <h4 class="rubik leading-5 font-semibold text-center mt-3.5 sm:mt-4 md:mt-5 mb-2.5">Inventory & Stock Management Systems</h4>
+            <p class="raleway text-xs md:text-sm leading-5 text-center">Real-time stock tracking, alerts, warehouse control, and order syncing.</p>
+          </div> 
+          <div class="service-card px-3.5 sm:px-5 py-4 sm:py-6 flex flex-col items-center from-bottom">
+            <img src="assets/images/service/e-commerce/product_management_solutions.webp" alt="image" class="w-1/2" loading="lazy">
+            <h4 class="rubik leading-5 font-semibold text-center mt-3.5 sm:mt-4 md:mt-5 mb-2.5">Product Management Solutions</h4>
+            <p class="raleway text-xs md:text-sm leading-5 text-center">Bulk uploads, SKU creation, variants, catalog structuring, and automation tools.</p>
+          </div>   
+          <div class="service-card px-3.5 sm:px-5 py-4 sm:py-6 flex flex-col items-center from-bottom">
+            <img src="assets/images/service/e-commerce/logistics_delivery_management_integration.webp" alt="image" class="w-1/2" loading="lazy">
+            <h4 class="rubik leading-5 font-semibold text-center mt-3.5 sm:mt-4 md:mt-5 mb-2.5">Logistics & Delivery Management Integration</h4>
+            <p class="raleway text-xs md:text-sm leading-5 text-center">Delivery partner integration, order tracking, shipment management.</p>
+          </div> 
+          <div class="service-card px-3.5 sm:px-5 py-4 sm:py-6 flex flex-col items-center from-bottom">
+            <img src="assets/images/service/e-commerce/e-commerce_performance_optimization.webp" alt="image" class="w-1/2" loading="lazy">
+            <h4 class="rubik leading-5 font-semibold text-center mt-3.5 sm:mt-4 md:mt-5 mb-2.5">E-commerce Performance Optimization</h4>
+            <p class="raleway text-xs md:text-sm leading-5 text-center">Speed improvement, cart optimization, checkout improvement, conversion boosting.</p>
+          </div>
+          <div class="service-card px-3.5 sm:px-5 py-4 sm:py-6 flex flex-col items-center from-bottom">
+            <img src="assets/images/service/e-commerce/shopping_cart_checkout_customization.webp" alt="image" class="w-1/2" loading="lazy">
+            <h4 class="rubik leading-5 font-semibold text-center mt-3.5 sm:mt-4 md:mt-5 mb-2.5">Shopping Cart & Checkout Customization</h4>
+            <p class="raleway text-xs md:text-sm leading-5 text-center">Custom checkout flow, abandoned cart systems, and upsell/cross-sell features.</p>
+          </div>  
+        </div>
+      </div>
     </section>
+
+    <section class="px-5 sm:px-7 md:px-9 lg:px-10 pb-12 sm:pb-14 md:pb-16 lg:pb-20 xl:pb-24">
+      <div class="flex flex-col justify-center items-center from-bottom">
+        <h5 class="raleway text-lg sm:text-xl md:text-[22px] lg:text-[25px] text-[#C6C5B9] text-center mb-2 sm:mb-3">OUR PRODUCTS</h5>
+        <h2 class="rubik font-bold text-[32px] sm:text-[38px] md:text-[46px] lg:text-[52px]  xl:text-[56px] leading-[36px] sm:leading-[40px] md:leading-[44px] lg:leading-[56px] xl:leading-[60px] text-[var(--primary-color)] text-center mb-3 sm:mb-5 md:mb-6"
+        >OUR FLAGSHIP PRODUCTS</h2>
+        <p class="raleway text-sm md:text-[15px] leading-[22px] md:leading-6 text-[var(--primary-dark)] text-center">
+          We specialize in developing innovative, customizable solutions for businesses across industries.
+        </p>
+      </div>
+
+      <div class="flex gap-5 flex-wrap mt-4 sm:mt-5 md:mt-6 lg:mt-7 xl:mt-8">
+        <div class="product-card w-full sm:w-[47.5%] md:w-4/12 lg:w-[23.5%] px-3.5 sm:px-4 md:px-5 py-4 sm:py-5 md:py-6 from-bottom">
+          <img src="assets/images/laptop_white.webp" alt="product_image" loading="lazy">
+          <h4 class="rubik text-lg sm:text-xl font-semibold text-center text-[var(--primary-color)] mb-2">MEDBUS</h4>
+          <p class="raleway text-xs md:text-sm leading-5 text-center">A powerful clinic management software with customizable modules to manage patient records, billing, scheduling, and reporting.</p>
+        </div>
+        
+        <div class="product-card w-full sm:w-[47.5%] md:w-4/12 lg:w-[23.5%] px-3.5 sm:px-4 md:px-5 py-4 sm:py-5 md:py-6 from-bottom">
+          <img src="assets/images/laptop_white.webp" alt="product_image" loading="lazy">
+          <h4 class="rubik text-lg sm:text-xl font-semibold text-center text-[var(--primary-color)] mb-2">Bus CRM</h4>
+          <p class="raleway text-xs md:text-sm leading-5 text-center">A business CRM solution designed to manage leads, sales, customers, and operations end-to-end.</p>
+        </div>
+
+        <div class="product-card w-full sm:w-[47.5%] md:w-4/12 lg:w-[23.5%] px-3.5 sm:px-4 md:px-5 py-4 sm:py-5 md:py-6 from-bottom">
+          <img src="assets/images/laptop_white.webp" alt="product_image" loading="lazy">
+          <h4 class="rubik text-lg sm:text-xl font-semibold text-center text-[var(--primary-color)] mb-2">Bus Exam</h4>
+          <p class="raleway text-xs md:text-sm leading-5 text-center">A flexible online exam portal, perfect for educational institutions, training centers, and corporate assessments.</p>
+        </div>
+
+        <div class="product-card w-full sm:w-[47.5%] md:w-4/12 lg:w-[23.5%] px-3.5 sm:px-4 md:px-5 py-4 sm:py-5 md:py-6 from-bottom">
+          <img src="assets/images/laptop_white.webp" alt="product_image" loading="lazy">
+          <h4 class="rubik text-lg sm:text-xl font-semibold text-center text-[var(--primary-color)] mb-2">Bus ERP</h4>
+          <p class="raleway text-xs md:text-sm leading-5 text-center">A comprehensive business ERP software to streamline operations, accounting, HR, inventory, and workflow.</p>
+        </div>
+
+        <div class="product-card w-full sm:w-[47.5%] md:w-4/12 lg:w-[23.5%] px-3.5 sm:px-4 md:px-5 py-4 sm:py-5 md:py-6 from-bottom">
+          <img src="assets/images/laptop_white.webp" alt="product_image" loading="lazy">
+          <h4 class="rubik text-lg sm:text-xl font-semibold text-center text-[var(--primary-color)] mb-2">Business Setup ERP</h4>
+          <p class="raleway text-xs md:text-sm leading-5 text-center">Specifically built for UAE business setup organizations, offering end-to-end management with localization.</p>
+        </div>
+
+        <div class="product-card w-full sm:w-[47.5%] md:w-4/12 lg:w-[23.5%] px-3.5 sm:px-4 md:px-5 py-4 sm:py-5 md:py-6 from-bottom">
+          <img src="assets/images/laptop_white.webp" alt="product_image" loading="lazy">
+          <h4 class="rubik text-lg sm:text-xl font-semibold text-center text-[var(--primary-color)] mb-2">Service Bus</h4>
+          <p class="raleway text-xs md:text-sm leading-5 text-center">A field service management app for order-taking, task allocation, and staff tracking.</p>
+        </div>
+
+        <div class="product-card w-full sm:w-[47.5%] md:w-4/12 lg:w-[23.5%] px-3.5 sm:px-4 md:px-5 py-4 sm:py-5 md:py-6 from-bottom">
+          <img src="assets/images/laptop_white.webp" alt="product_image" loading="lazy">
+          <h4 class="rubik text-lg sm:text-xl font-semibold text-center text-[var(--primary-color)] mb-2">Bus HRMS</h4>
+          <p class="raleway text-xs md:text-sm leading-5 text-center">A complete HR management system for payroll, attendance, leave, recruitment, and employee engagement.</p>
+        </div>
+
+        <div class="product-card w-full sm:w-[47.5%] md:w-4/12 lg:w-[23.5%] px-3.5 sm:px-4 md:px-5 py-4 sm:py-5 md:py-6 from-bottom">
+          <img src="assets/images/laptop_white.webp" alt="product_image" loading="lazy">
+          <h4 class="rubik text-lg sm:text-xl font-semibold text-center text-[var(--primary-color)] mb-2">Bus Warehouse Management</h4>
+          <p class="raleway text-xs md:text-sm leading-5 text-center">Smart warehouse and inventory management software to optimize storage, distribution, and tracking.</p>
+        </div>
+      </div>
+    </section>
+
+     <section class="px-5 sm:px-7 md:px-9 lg:px-10 py-10 sm:py-14 md:py-16 lg:py-24 bg-[var(--primary-dark)]">
+      <div class="flex flex-col gap-5 sm:gap-6 xl:gap-8">
+        <h2 class="rubik font-bold text-[32px] sm:text-[38px] md:text-[46px] lg:text-[52px]  xl:text-[56px] leading-[36px] sm:leading-[40px] md:leading-[44px] lg:leading-[58px] xl:leading-[64px] text-[var(--primary-color)]  text-center from-bottom"
+            >Why Choose <br> <span class="text-white">Techbus</span>
+        </h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3.5 sm:gap-4 md:gap-6 lg:gap-8 mt-6 sm:mt-8 md:mt-10 lg:mt-12">
+            <div class="flex flex-col items-center gap-6 px-4 py-5 sm:py-6 md:py-7 lg:py-9 choose-card from-bottom">
+              <img src="assets/icons/global_vision.webp" class="w-[46px]" loading="lazy" alt="image">
+              <div class="text-center">
+                <h4 class="text-white rubik text-xl font-semibold">Local expertise, global vision</h4>
+                <p class="raleway text-xs md:text-sm leading-6 md:leading-[30px] text-white">Based in Kochi, India, delivering world-class solutions.</p>
+              </div>
+            </div>
+
+            <div class="flex flex-col items-center gap-6 px-4 py-5 sm:py-6 md:py-7 lg:py-9 choose-card from-bottom">
+              <img src="assets/icons/customizable_technology.webp" class="w-[46px]" loading="lazy" alt="image">
+              <div class="text-center">
+                <h4 class="text-white rubik text-xl font-semibold">Customizable technology</h4>
+                <p class="raleway text-xs md:text-sm leading-6 md:leading-[30px] text-white">Tailored solutions for your business needs.</p>
+              </div>
+            </div>
+
+            <div class="flex flex-col items-center gap-6 px-4 py-5 sm:py-6 md:py-7 lg:py-9 choose-card from-bottom">
+              <img src="assets/icons/agile_methodology.webp" class="w-[46px]" loading="lazy" alt="image">
+              <div class="text-center">
+                <h4 class="text-white rubik text-xl font-semibold">Agile methodology</h4>
+                <p class="raleway text-xs md:text-sm leading-6 md:leading-[30px] text-white">Faster delivery with flexibility and continuous improvements.</p>
+              </div>
+            </div>
+
+            <div class="flex flex-col items-center gap-6 px-4 py-5 sm:py-6 md:py-7 lg:py-9 choose-card from-bottom">
+              <img src="assets/icons/dedicated_support.webp" class="w-[46px]" loading="lazy" alt="image">
+              <div class="text-center">
+                <h4 class="text-white rubik text-xl font-semibold">Dedicated support</h4>
+                <p class="raleway text-xs md:text-sm leading-6 md:leading-[30px] text-white">Transparent communication and long-term client partnerships.</p>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="px-5 sm:px-7 md:px-9 lg:px-10 pb-10 sm:pb-14 md:pb-16 lg:pb-24 bg-[var(--primary-dark)]">
+      <div class="flex justify-between flex-col md:flex-row gap-5 xl:gap-8 overflow-hidden">
+          <div class="w-full md:w-[47.5%] lg:w-4/12 from-left">
+            <div class="black-gradient relative">
+                <img src="assets/images/about_image_01.webp" class="w-full rounded-[14px] object-cover" alt="image" loading="lazy">
+            </div>
+          </div>
+
+          <div class="w-full md:w-[47.5%] lg:w-3/5 relative flex flex-col justify-center from-left">
+            <h5 class="raleway text-lg sm:text-xl md:text-[22px] lg:text-[25px] text-center md:text-start text-white mb-2 sm:mb-3">About</h5>
+            <h2 class="rubik font-bold text-[32px] sm:text-[38px] md:text-[46px] lg:text-[52px]  xl:text-[56px] leading-[36px] sm:leading-[40px] md:leading-[44px] lg:leading-[56px] xl:leading-[60px] text-[var(--primary-color)]  text-center md:text-start"
+            >About Techbus
+            </h2>
+            <p class="raleway text-sm md:text-[15px] leading-[22px] md:leading-[24px] text-white text-center md:text-start mt-4 sm:mt-5 md:mt-6 lg:mt-7">
+              We are not just a software development company we are your strategic technology partner. Our
+              mission is to empower businesses with innovative, scalable, and user-friendly solutions while our
+              vision is to make technology accessible, efficient, and impactful for everyone.     
+            </p>
+            <a href="#" class="learn-button py-3 px-8 inline-block rounded-[10px] w-fit mt-4 md:mt-6 lg:mt-8 mx-auto md:mx-0 pointer-events-auto">LEARN MORE</a>
+          </div>
+        </div>
+    </section>
+
+    <div class="vertical-gradient">
+      <section class="px-5 sm:px-7 md:px-9 lg:px-10 py-12 sm:py-14 md:py-16 lg:py-20 xl:py-24">
+        <div class="from-bottom"> 
+            <h5 class="raleway text-lg sm:text-xl md:text-[22px] lg:text-[25px] text-[var(--primary-color)] text-center mb-2 sm:mb-3">Benefits</h5>
+            <h2 class="rubik font-bold text-[32px] sm:text-[38px] md:text-[46px] lg:text-[52px]  xl:text-[56px] leading-[36px] sm:leading-[40px] md:leading-[44px] lg:leading-[56px] xl:leading-[60px] text-white text-center mb-3 sm:mb-5 md:mb-6"
+            >Benefits You Can Expect
+            </h2>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6 md:gap-7 mt-10 sm:mt-12 md:mt-14 lg:mt-16">
+
+            <div class="flex flex-col gap-3.5 px-3 sm:px-5 md:px-6 lg:px-7 py-6 sm:py-8 md:py-10 lg:py-12 benefit-card from-bottom">
+                <div class="p-2.5 rounded-[20px] benefit-icon">
+                  <img src="assets/icons/increased_efficiency_and_productivity.webp" loading="lazy" alt="icon" class="w-[46px]">
+                </div>
+                <h4 class="rubik text-xl font-semibold">Increased Efficiency and Productivity</h4>
+                <p class="raleway text-xs md:text-sm leading-6 md:leading-[30px]">Our apps streamline processes, automate tasks, and empower your team to work smarter, not harder.</p>
+            </div>
+
+            <div class="flex flex-col gap-3.5 px-3 sm:px-5 md:px-6 lg:px-7 py-6 sm:py-8 md:py-10 lg:py-12 benefit-card from-bottom">
+                <div class="p-2.5 rounded-[20px] benefit-icon">
+                  <img src="assets/icons/enhanced_customer_engagement.webp" loading="lazy" alt="icon" class="w-[46px]">
+                </div>
+                <h4 class="rubik text-xl font-semibold">Enhanced Customer Engagement</h4>
+                <p class="raleway text-xs md:text-sm leading-6 md:leading-[30px]">Create user-friendly and engaging apps that foster stronger customer relationships and brand loyalty.</p>
+            </div>
+
+            <div class="flex flex-col gap-3.5 px-3 sm:px-5 md:px-6 lg:px-7 py-6 sm:py-8 md:py-10 lg:py-12 benefit-card from-bottom">
+                <div class="p-2.5 rounded-[20px] benefit-icon">
+                  <img src="assets/icons/improved_data_driven_decision_making.webp" loading="lazy" alt="icon" class="w-[46px]">
+                </div>
+                <h4 class="rubik text-xl font-semibold">Improved Data-Driven Decision Making</h4>
+                <p class="raleway text-xs md:text-sm leading-6 md:leading-[30px]">Leverage the power of data collected through your app to gain valuable insights and make informed business decisions.</p>
+            </div>
+
+            <div class="flex flex-col gap-3.5 px-3 sm:px-5 md:px-6 lg:px-7 py-6 sm:py-8 md:py-10 lg:py-12 benefit-card from-bottom">
+                <div class="p-2.5 rounded-[20px] benefit-icon">
+                  <img src="assets/icons/a_competitive_edge.webp" loading="lazy" alt="icon" class="w-[46px]">
+                </div>
+                <h4 class="rubik text-xl font-semibold">A Competitive Edge</h4>
+                <p class="raleway text-xs md:text-sm leading-6 md:leading-[30px]">Stay ahead of the curve with cutting-edge technology solutions that differentiate you from the competition.</p>
+            </div>
+        </div>
+      </section>
+
+      <section class="px-5 sm:px-7 md:px-9 lg:px-10 pb-12 sm:pb-14 md:pb-16 lg:pb-20 xl:pb-24 overflow-hidden">
+        <div class="flex justify-between flex-col md:flex-row gap-5 xl:gap-8">
+          <div class="w-full md:w-[47.5%] lg:w-4/12">
+            <div class="from-left">
+                <h5 class="raleway text-lg sm:text-xl md:text-[22px] lg:text-[25px] text-white text-center md:text-start mb-2 sm:mb-3">Get In Touch</h5>
+                <p class="raleway text-sm md:text-[15px] leading-[22px] md:leading-[24px] text-white text-center md:text-start">
+                  Let’s build something amazing together! Whether you’re looking for a clinic management system, 
+                  CRM, ERP, HRMS, or a custom app/website, Tech Bus is here to bridge the gap between technology and success.
+                </p>
+
+                <img src="assets/images/get-in-touch.webp" class="mt-5 sm:mt-6 md:mt-7 lg:mt-8" alt="image" loading="lazy">
+            </div>
+          </div>
+
+          <div class="w-full md:w-[47.5%] lg:w-3/5 relative flex flex-col justify-center from-right">
+            <h2 class="rubik font-bold text-[32px] sm:text-[38px] md:text-[46px] lg:text-[52px]  xl:text-[56px] leading-[36px] sm:leading-[40px] md:leading-[44px] lg:leading-[56px] xl:leading-[60px] text-white text-center md:text-start"
+            >Contact us today for a free consultation.
+            </h2>
+            <form action="" class="form-container rounded-xl lg:rounded-2xl xl:rounded-3xl py-5 sm:py-6 md:py-7 lg:py-8 xl:py-10">
+                <div class="flex flex-col sm:flex-row gap-4 mb-3.5">
+                <div class="flex flex-col flex-1">
+                    <label for="name" class="rubik font-semibold text-lg md:text-[16px] text-white mb-3">Name</label>
+                    <input type="text" id="name" placeholder="Enter your name">
+                </div>
+                <div class="flex flex-col flex-1">
+                    <label for="phoneNumber" class="rubik font-semibold text-lg md:text-[16px] text-white mb-3">Phone Number</label>
+                    <input type="number" id="phoneNumber" placeholder="000 XXX 00 00">
+                </div>
+                </div>
+                
+                <div class="flex flex-col sm:flex-row gap-4 mb-3.5">
+                <div class="flex flex-col flex-1">
+                    <label for="email" class="rubik font-semibold text-lg md:text-[16px] text-white mb-3">Email Address</label>
+                    <input type="email" id="email" placeholder="Enter your email">
+                </div>
+                </div>
+                <div class="flex flex-col flex-1">
+                    <label for="Message" class="rubik font-semibold text-lg md:text-[16px] text-white mb-3">Message</label>
+                    <textarea name="Message" id="Message" placeholder="Message"></textarea>
+                </div>
+
+                <button type="submit" class="px-5 py-2.5 submit-button min-w-full sm:min-w-[175px] mt-4 sm:mt-5 cursor-pointer" style="border-radius: 50px;">
+                  Send Message
+                  <div class="submit-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M21.4258 11.095L4.42576 3.09498C4.25458 3.01443 4.06406 2.9841 3.87632 3.00749C3.68859 3.03089 3.51134 3.10707 3.36516 3.22717C3.21899 3.34727 3.10988 3.50638 3.05051 3.68601C2.99114 3.86564 2.98395 4.05843 3.02976 4.24198L4.24176 9.09098L11.9998 12L4.24176 14.909L3.02976 19.758C2.98309 19.9417 2.98968 20.1349 3.04877 20.3149C3.10787 20.495 3.21702 20.6546 3.36346 20.7749C3.5099 20.8952 3.68757 20.9713 3.8757 20.9944C4.06382 21.0174 4.25461 20.9864 4.42576 20.905L21.4258 12.905C21.5976 12.8242 21.7428 12.6962 21.8446 12.536C21.9463 12.3757 22.0004 12.1898 22.0004 12C22.0004 11.8102 21.9463 11.6242 21.8446 11.464C21.7428 11.3037 21.5976 11.1757 21.4258 11.095Z"
+                      fill="currentColor"/>
+                    </svg>
+                  </div>
+                </button>
+            </form>
+            </div>
+        </div>
+      </section>
+
+      <section class="px-5 sm:px-7 md:px-9 lg:px-10 pb-10 sm:pb-14 md:pb-16 lg:pb-24 relative flex flex-col items-center">  
+        <div class="from-bottom">
+            <h5 class="raleway text-lg sm:text-xl md:text-[22px] lg:text-[25px] text-[#C6C5B9] text-center mb-2 sm:mb-3">FAQ</h5>
+            <h2 class="rubik font-bold text-[32px] sm:text-[38px] md:text-[46px] lg:text-[52px]  xl:text-[56px] leading-[36px] sm:leading-[40px] md:leading-[44px] lg:leading-[56px] xl:leading-[60px] text-white text-center mb-3 sm:mb-5 md:mb-6"
+            >Frequently Asked Questions
+            </h2>
+        </div>
+
+        <div class="faq_main_container w-full flex flex-col gap-3 md:w-10/12 lg:w-9/12 xl:w-8/12 mt-4 sm:mt-5 md:mt-6 lg:mt-7">
+          <div class="faq_container flex flex-col px-3 sm:px-3.5 md:px-4 lg:px-5 py-3.5 sm:py-4 md:py-5 lg:py-6 rounded-[14px] cursor-pointer from-bottom">
+            <div class="faq_question flex items-center justify-between">
+              <div class="flex items-center gap-5 rubik sm:text-[16px] md:text-lg lg:text-[20px] leading-[30px] font-medium">
+                <h3>What services does Tech Bus Tech Solutions provide?</h3>
+              </div>
+                <div class="icon">
+                  <img src="assets/icons/minus.svg" alt="icon" loading="lazy" class="close-faq w-6">
+                  <img src="assets/icons/plus.svg" alt="icon" loading="lazy" class="open-faq w-6">
+                </div>
+            </div>
+            <p class="font-light text-sm lg:text-[15px] leading-6 raleway answercont open-answer">
+              We offer a complete range of IT services, including custom software development, ERP, CRM, HRMS, warehouse and clinic management systems, e-commerce solutions, and digital marketing services such as SEO, social media marketing, and branding.
+            </p>
+          </div>
+
+          <div class="faq_container flex flex-col px-3 sm:px-3.5 md:px-4 lg:px-5 py-3.5 sm:py-4 md:py-5 lg:py-6 rounded-[14px] cursor-pointer from-bottom">
+            <div class="faq_question flex items-center justify-between">
+              <div class="flex items-center gap-5 rubik sm:text-[16px] md:text-lg lg:text-[20px] leading-[30px] font-medium">
+                <h3>What industries do you cater to?</h3>
+              </div>
+                <div class="icon">
+                  <img src="assets/icons/minus.svg" alt="icon" loading="lazy" class="close-faq w-6">
+                  <img src="assets/icons/plus.svg" alt="icon" loading="lazy" class="open-faq w-6">
+                </div>
+            </div>
+            <p class="font-light text-sm lg:text-[15px] leading-6 raleway answercont">
+              We work with businesses across healthcare, education, retail, logistics, and various other industries, offering tailored solutions that address unique operational challenges.
+            </p>
+          </div>
+
+          <div class="faq_container flex flex-col px-3 sm:px-3.5 md:px-4 lg:px-5 py-3.5 sm:py-4 md:py-5 lg:py-6 rounded-[14px] cursor-pointer from-bottom">
+            <div class="faq_question flex items-center justify-between">
+              <div class="flex items-center gap-5 rubik sm:text-[16px] md:text-lg lg:text-[20px] leading-[30px] font-medium">
+                <h3>Do you develop both web and mobile applications?</h3>
+              </div>
+                <div class="icon">
+                  <img src="assets/icons/minus.svg" alt="icon" loading="lazy" class="close-faq w-6">
+                  <img src="assets/icons/plus.svg" alt="icon" loading="lazy" class="open-faq w-6">
+                </div>
+            </div>
+            <p class="font-light text-sm lg:text-[15px] leading-6 raleway answercont">
+              Yes, we specialize in both web and mobile app development. Our applications are designed to be scalable, secure, and user-friendly—ensuring a seamless experience across all devices.
+            </p>
+          </div>
+
+          <div class="faq_container flex flex-col px-3 sm:px-3.5 md:px-4 lg:px-5 py-3.5 sm:py-4 md:py-5 lg:py-6 rounded-[14px] cursor-pointer from-bottom">
+            <div class="faq_question flex items-center justify-between">
+              <div class="flex items-center gap-5 rubik sm:text-[16px] md:text-lg lg:text-[20px] leading-[30px] font-medium">
+                <h3>Can your software be customized for my business?</h3>
+              </div>
+                <div class="icon">
+                  <img src="assets/icons/minus.svg" alt="icon" loading="lazy" class="close-faq w-6">
+                  <img src="assets/icons/plus.svg" alt="icon" loading="lazy" class="open-faq w-6">
+                </div>
+            </div>
+            <p class="font-light text-sm lg:text-[15px] leading-6 raleway answercont">
+              Absolutely. All our solutions are fully customizable to match your workflow, processes, and branding—so you get a product that truly fits your business needs.
+            </p>
+          </div>
+
+          <div class="faq_container flex flex-col px-3 sm:px-3.5 md:px-4 lg:px-5 py-3.5 sm:py-4 md:py-5 lg:py-6 rounded-[14px] cursor-pointer from-bottom">
+            <div class="faq_question flex items-center justify-between">
+              <div class="flex items-center gap-5 rubik sm:text-[16px] md:text-lg lg:text-[20px] leading-[30px] font-medium">
+                <h3>How does your development process work?</h3>
+              </div>
+                <div class="icon">
+                  <img src="assets/icons/minus.svg" alt="icon" loading="lazy" class="close-faq w-6">
+                  <img src="assets/icons/plus.svg" alt="icon" loading="lazy" class="open-faq w-6">
+                </div>
+            </div>
+            <p class="font-light text-sm lg:text-[15px] leading-6 raleway answercont">
+              We follow an agile development methodology, which includes consultation, planning, design, development, testing, deployment, and ongoing support—ensuring transparency and continuous improvement at every stage.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
 
    <!-- FOOTER -->
     <footer class="px-5 sm:px-7 md:px-9 lg:px-10 py-12 sm:py-14 md:py-16 lg:py-20 xl:py-24 bg-[var(--primary-dark)] overflow-hidden">

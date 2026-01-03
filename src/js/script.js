@@ -161,8 +161,54 @@ document.addEventListener('DOMContentLoaded', ()=>{
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
       },
-    });
+    })
     }
+
+if(document.querySelectorAll('.service-card')){
+    document.querySelectorAll('.service-card').forEach(card => {
+        const radius = 200;
+        let targetX = 0, targetY = 0
+        let currentX = 0, currentY = 0
+        let animating = false
+        const animate = () => {
+            currentX += (targetX - currentX) * 0.12
+            currentY += (targetY - currentY) * 0.12
+            card.style.setProperty('--x', `${currentX}px`)
+            card.style.setProperty('--y', `${currentY}px`)
+            if (animating) requestAnimationFrame(animate)
+        }
+        card.addEventListener('mouseenter', () => {
+            animating = true
+            requestAnimationFrame(animate)
+        })
+        card.addEventListener('mousemove', e => {
+            const rect = card.getBoundingClientRect()
+            const x = e.clientX - rect.left
+            const y = e.clientY - rect.top
+            const dTop = y
+            const dBottom = rect.height - y
+            const dLeft = x;
+            const dRight = rect.width - x
+            const min = Math.min(dTop, dBottom, dLeft, dRight)
+            if (min === dTop) {
+                targetX = x
+                targetY = 0
+            } else if (min === dBottom) {
+                targetX = x
+                targetY = rect.height
+            } else if (min === dLeft) {
+                targetX = 0
+                targetY = y
+            } else {
+                targetX = rect.width;
+                targetY = y
+            }
+        })
+        card.addEventListener('mouseleave', () => {
+            animating = false
+        })
+    })
+  }
 
     if(document.querySelector('.verticalSwiper')){
       const verticalSwiper = new Swiper(".verticalSwiper", {
