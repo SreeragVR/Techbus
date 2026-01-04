@@ -307,7 +307,7 @@ const faqs = document.querySelectorAll('.faq_container')
     }
 
   const container = document.querySelector('.pattern-banner')
-  const icons = document.querySelectorAll('.digital-marketing-banner-icon')
+  const icons = document.querySelectorAll('.banner-icon')
 if(container && icons){
   container.addEventListener('mousemove', (e) => {
       const rect = container.getBoundingClientRect()
