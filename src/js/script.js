@@ -18,28 +18,38 @@ document.addEventListener('DOMContentLoaded', ()=>{
         })
     }
 
-    const dropDown = document.querySelector('.drop-down')
-    const dropButton = document.querySelector('.drop-button')
-    const dropListBox = document.querySelector('.drop-down-list')
+const dropDowns = document.querySelectorAll('.drop-down-box')
 
-    if(dropDown && dropButton && dropListBox){
-      const dropIcon = dropButton.querySelector('svg')
-      const links = dropDown.querySelectorAll('.drop-link')
-      dropButton.addEventListener('click',(e)=>{
-        e.stopPropagation()
-        dropListBox.classList.toggle('drop-active')
-        dropIcon.classList.toggle('rotate-icon')
-      })
-      links.forEach((link)=>{
-        link.addEventListener('click',(e)=>{
-          e.stopPropagation()
-        })
-      })
-      document.addEventListener('click', () => {
-      dropListBox.classList.remove('drop-active')
-      dropIcon.classList.remove('rotate-icon')
-      })
-    }
+dropDowns.forEach((drop) => {
+  const dropButton = drop.querySelector('.drop-down-box-button')
+  const dropListBox = drop.querySelector('.drop-down-box-list')
+  const dropIcon = dropButton.querySelector('svg')
+  const links = drop.querySelectorAll('.down-link')
+  dropButton.addEventListener('click', (e) => {
+    e.stopPropagation()
+    dropDowns.forEach((otherDrop) => {
+      if (otherDrop !== drop) {
+        otherDrop.querySelector('.drop-down-box-list')
+          .classList.remove('drop-active')
+        otherDrop.querySelector('.drop-down-box-button svg')
+          .classList.remove('rotate-icon')
+      }
+    })
+    dropListBox.classList.toggle('drop-active')
+    dropIcon.classList.toggle('rotate-icon')
+  })
+  links.forEach((link) => {
+    link.addEventListener('click', (e) => e.stopPropagation())
+  })
+})
+document.addEventListener('click', () => {
+  dropDowns.forEach((drop) => {
+    drop.querySelector('.drop-down-box-list')
+      .classList.remove('drop-active');
+    drop.querySelector('.drop-down-box-button svg')
+      .classList.remove('rotate-icon')
+  })
+})
 
     const closeForm = document.querySelector('.close-popup')
     const popContainer = document.querySelector('.popup-back')
@@ -84,29 +94,6 @@ document.addEventListener('DOMContentLoaded', ()=>{
             otpInputs[index - 1].focus()
           }
         })
-      })
-    }
-
-    const megaMenu = document.querySelector('.mega-menu')
-    const megaButton = document.querySelector('.mega-button')
-    const megaListBox = document.querySelector('.mega-menu-list')
-
-    if(megaButton && megaMenu && megaListBox){
-      const dropIcon = megaButton.querySelector('svg')
-      const linkBoxes = megaMenu.querySelectorAll('.mega-link-box')
-      megaButton.addEventListener('click',(e)=>{
-        e.stopPropagation()
-        megaListBox.classList.toggle('mega-active')
-        dropIcon.classList.toggle('rotate-icon')
-      })
-      linkBoxes.forEach((link)=>{
-        link.addEventListener('click',(e)=>{
-          e.stopPropagation()
-        })
-      })
-      document.addEventListener('click', () => {
-      megaListBox.classList.remove('mega-active')
-      dropIcon.classList.remove('rotate-icon')
       })
     }
 

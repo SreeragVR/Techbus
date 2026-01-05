@@ -62,12 +62,6 @@ body{
     left: 0;
     opacity: 0;
 }
-.drop-down-list.drop-active{
-    visibility: visible;
-    z-index: 0;
-    padding-top: 44px;
-    opacity: 1;
-}
 .drop-box{
     background-color: #121420;
     border-radius: 8px;
@@ -95,7 +89,6 @@ body{
     background-color: rgba(255, 255, 255, 0.6);
     border-radius: 8px;
     transition: 0.3s ease;
-    height: fit-content;
 }
 .drop-link:hover{
     background-color: #e6d1ff;
@@ -112,11 +105,17 @@ body{
     width: 100vw;
     left: 0;
 }
- .mega-menu-list.mega-active{
+ /* .mega-menu-list.mega-active{
     visibility: visible;
     z-index: 0;
     padding-top: 44px;
- }
+ } */
+  .drop-down-box-list.drop-active{
+    visibility: visible;
+    z-index: 0;
+    padding-top: 44px;
+    opacity: 1;
+}
 .menu-box{
     background-color: #121420;
     border-radius: 8px;
