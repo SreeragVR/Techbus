@@ -956,30 +956,31 @@
     <!-- POPUP FORM -->
      <div class="popup-back px-5 sm:px-7 md:px-9 lg:px-10 hidden">
 
-      <div class="close-popup">
-        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M7.46663 21.3594L6.64062 20.5334L13.174 14L6.64062 7.46669L7.46663 6.64069L14 13.174L20.5333 6.64069L21.3593 7.46669L14.826 14L21.3593 20.5334L20.5333 21.3594L14 14.826L7.46663 21.3594Z" 
-          fill="currentColor"/>
-        </svg>
-      </div>
-
       <div class="w-full h-screen flex justify-center items-center overflow-y-auto py-12 sm:py-14 md:py-16 lg:py-20 xl:py-24">
         <form action="" id="popForm"  class="popup-form flex flex-col items-center w-full sm:w-3/4 md:w-3/5 lg:w-1/2 xl:w-2/5 2xl:w-1/3 py-6 sm:py-8 md:py-9 lg:py-10 px-6 sm:px-7 md:px-8 lg:px-10 overflow-hidden">
-          <img src="../assets/TECHBUS_LOGO_WHITE.png" alt="LOGO" class="w-40 sm:w-52 md:w-72 relative z-1" loading="lazy">
+          <div class="close-popup">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7.46663 21.3594L6.64062 20.5334L13.174 14L6.64062 7.46669L7.46663 6.64069L14 13.174L20.5333 6.64069L21.3593 7.46669L14.826 14L21.3593 20.5334L20.5333 21.3594L14 14.826L7.46663 21.3594Z" 
+              fill="currentColor"/>
+            </svg>
+          </div>
+          <a href="../index.html">
+            <img src="../assets/TECHBUS_LOGO.webp" alt="LOGO" class="w-40 sm:w-52 md:w-72 relative z-1" loading="lazy">
+          </a>
           <div class="flex flex-col gap-1.5 mt-6 relative z-1">
-            <h4 class="text-white rubik text-xl font-semibold text-center">Let’s Build the Right Tech for Your Business</h4>
-            <p class="raleway font-light text-sm md:text-[15px] leading-[22px] md:leading-[24px] text-white text-center">
+            <h4 class="text-[var(--primary-dark)] rubik text-xl font-semibold text-center">Let’s Build the Right Tech for Your Business</h4>
+            <p class="raleway font-light text-sm md:text-[15px] leading-[22px] md:leading-[24px] text-[var(--primary-dark)] text-center">
                 Transform your ideas into powerful digital solutions with Techbus Tech Solutions.
               </p>
           </div>
 
           <div class="flex flex-col gap-4 w-full mt-5 sm:mt-6 lg:mt-8 relative z-1">
-            <input type="text" placeholder="full name" required>
+            <input type="text" placeholder="full name" name="fullName" required>
             <div class="flex gap-3">
-              <input type="number" placeholder="phone number" required>
-              <input type="email" placeholder="email address" required>
+              <input type="number" placeholder="phone number" name="phoneNumber" required>
+              <input type="email" placeholder="email address" name="emailAddress" required>
             </div>
-            <textarea name="" id="" placeholder="write your message"></textarea>
+            <textarea name="" id="" placeholder="write your message" name="message"></textarea>
 
             <button id="sendOtp" type="submit" class="block font-bold raleway px-4 py-2.5 min-w-[176px] pop-button whitespace-nowrap mt-5 sm:mt-6 md:mt-7 lg:mt-8 cursor-pointer">
               SEND MESSAGE
@@ -989,9 +990,15 @@
 
         <!-- OTP -->
         <form action="../index.html" id="otpForm" class="popup-form flex flex-col items-center w-full sm:w-3/4 md:w-3/5 lg:w-1/2 xl:w-2/5 2xl:w-1/3 py-6 sm:py-8 md:py-9 lg:py-10 px-6 sm:px-7 md:px-8 lg:px-10 overflow-hidden no-vissible">
+          <div class="close-popup">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7.46663 21.3594L6.64062 20.5334L13.174 14L6.64062 7.46669L7.46663 6.64069L14 13.174L20.5333 6.64069L21.3593 7.46669L14.826 14L21.3593 20.5334L20.5333 21.3594L14 14.826L7.46663 21.3594Z" 
+              fill="currentColor"/>
+            </svg>
+          </div>
           <div class="flex flex-col gap-1.5 mt-6 relative z-1">
-            <h4 class="text-white rubik text-xl font-semibold text-center">Enter Verification Code</h4>
-            <p class="raleway font-light text-sm md:text-[15px] leading-[22px] md:leading-[24px] text-white text-center">
+            <h4 class="text-[var(--primary-dark)] rubik text-xl font-semibold text-center">Enter Verification Code</h4>
+            <p class="raleway font-light text-sm md:text-[15px] leading-[22px] md:leading-[24px] text-[var(--primary-dark)] text-center">
                 A verification code has been sent to your phone number.
             </p>
           </div>
@@ -1007,10 +1014,10 @@
             </div>
 
             <div class="flex items-center justify-between flex-wrap gap-3.5">
-              <p class="raleway font-light text-sm md:text-[15px] leading-[22px] md:leading-[24px] text-white text-center" id="resendOtp">
+              <p class="raleway font-light text-sm md:text-[15px] leading-[22px] md:leading-[24px]text-[var(--primary-dark)] text-center" id="resendOtp">
                Resend OTP : <span class="resend-time">00:00</span>
               </p>
-              <p id="editNumber" class="raleway font-light text-sm md:text-[15px] leading-[22px] md:leading-[24px] text-white text-center flex items-center gap-1.5 cursor-pointer">
+              <p id="editNumber" class="raleway font-light text-sm md:text-[15px] leading-[22px] md:leading-[24px] text-[var(--primary-dark)] text-center flex items-center gap-1.5 cursor-pointer">
                 <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M3.375 12.9053V14.25C3.375 14.3495 3.41451 14.4448 3.48484 14.5152C3.55516 14.5855 3.65054 14.625 3.75 14.625H5.09475C5.19401 14.625 5.28922 14.5856 5.3595 14.5155L11.7345 8.14051L9.8595 6.26551L3.4845 12.6405C3.4144 12.7108 3.37502 12.806 3.375 12.9053ZM11.3175 4.80751L13.1925 6.68251L14.0947 5.78026C14.2354 5.63961 14.3143 5.44888 14.3143 5.25001C14.3143 5.05114 14.2354 4.8604 14.0947 4.71976L13.2802 3.90526C13.1396 3.76466 12.9489 3.68567 12.75 3.68567C12.5511 3.68567 12.3604 3.76466 12.2197 3.90526L11.3175 4.80751Z" 
                   stroke="currentColor"/>

@@ -276,7 +276,7 @@ body{
 .product-card{
     border: 1px solid var(--primary-color);
     border-radius: 14px;
-    cursor: pointer;
+    display: block;
 }
 .product-card:hover img{
     transition: 0.5s ease;
@@ -1006,6 +1006,11 @@ input[type=number] {
     box-shadow: 0px 8px 20px #7225cf3f;
   }
 }
+.product-headline{
+  background: linear-gradient(180deg, var(--primary-color), #fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .benefit-card{
     background-color: white;
     border-radius: 16px;
@@ -1039,17 +1044,6 @@ input[type=number] {
 }
 .benefit-card:hover p{
     color: white;
-}
-.software-button{
-    background-color: white;
-    color: var(--primary-color);
-    transition: 0.5s ease-in-out;
-    border-radius: 14px;
-    width: fit-content;
-    &:hover{
-        background-color: var(--primary-color);
-        color: white;
-    }
 }
 .banner-icon {
     transition: transform 0.2s ease-out;
@@ -1473,11 +1467,11 @@ canvas {
     display: none;
 }
 .popup-form{
-    background-color: #121420;
+    background-color: #ffffff;
     border-radius: 30px;
     position: relative;
 }
-.popup-form::before{
+/* .popup-form::before{
     content: '';
     position: absolute;
     width: 800px;
@@ -1498,17 +1492,17 @@ canvas {
     right: 0;
     transform: translate(50%,-50%);
     z-index: 0;
-}
+} */
 .popup-form input, .popup-form textarea{
     width: 100%;
-    color: white;
+    color: #121420;
     font-family: var(--raleway-font);
     font-size: 15px;
     line-height: 24px;
     height: 50px;
     border-radius: 10px;
     padding: 8px 16px;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: #e7e7e7;
 }
 .popup-form textarea{
     height: 100px;
@@ -1518,7 +1512,7 @@ canvas {
     text-align: center;
 }
 #editNumber{
-    color: white;
+    color: #121420;
     transition: ease 0.5s;
     &:hover{
         color: #7125CF;
@@ -1532,7 +1526,7 @@ canvas {
     height: 100px;
     top: 0;
     right: 0;
-    transform: translate(30%,-40%);
+    transform: translate(40%,-35%);
     background-color: #a358ff9e;
     backdrop-filter: blur(10px);
     border-bottom-left-radius: 50px;

@@ -51,7 +51,7 @@ document.addEventListener('click', () => {
   })
 })
 
-    const closeForm = document.querySelector('.close-popup')
+    const closeForm = document.querySelectorAll('.close-popup')
     const popContainer = document.querySelector('.popup-back')
     const contactForm = document.querySelectorAll('.form-view')
     if(popContainer && closeForm && contactForm){
@@ -66,10 +66,14 @@ document.addEventListener('click', () => {
       contactForm.forEach((form)=>{
         form.addEventListener('click', ()=>{
           popContainer.classList.toggle('hidden')
+          document.body.style.overflow = 'hidden'
         })
       })
-      closeForm.addEventListener('click', ()=>{
+      closeForm.forEach((close)=>{
+        close.addEventListener('click', ()=>{
         popContainer.classList.toggle('hidden')
+        document.body.style.overflow = ''
+      })
       })
       sendMessage.addEventListener('click', ()=>{
         otpForm.classList.remove('no-vissible')
@@ -79,7 +83,6 @@ document.addEventListener('click', () => {
         otpForm.classList.add('no-vissible')
         formBox.classList.remove('no-vissible')
       })
-
       const otpInputs = document.querySelectorAll("#otpForm input")
       otpInputs.forEach((input, index) => {
         otpInputs[0].focus();
@@ -96,7 +99,6 @@ document.addEventListener('click', () => {
         })
       })
     }
-
     const iconContainer = document.querySelector(".home-hero")
     const homeIcons = document.querySelectorAll(".home-icon")
     if(iconContainer && homeIcons){
@@ -108,7 +110,6 @@ document.addEventListener('click', () => {
         const depth = (index + 1) * 10
         const moveX = (x / rect.width) * depth
         const moveY = (y / rect.height) * depth
-
         icon.style.transform = `translate3d(${moveX}px, ${moveY}px, 0)`
       })
     })
@@ -118,8 +119,6 @@ document.addEventListener('click', () => {
       })
     })
     }
-
-
   const buttons = document.querySelectorAll('.service-btn');
   const contents = document.querySelectorAll('.service-content');
 
