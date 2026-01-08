@@ -733,7 +733,6 @@ body{
         transform: translateX(10px) !important;
     }
 }
-
 .box-link{
     transition: ease-in-out 0.3s;
     color: white;
@@ -742,7 +741,6 @@ body{
         transform: translateY(-8px) !important;
     }
 }
-
 .footer-icon{
     color: var(--primary-color);
     transition: ease-in-out 0.3s;  
@@ -794,7 +792,6 @@ body{
     border: 1px solid rgba(255, 255, 255, 0.2);
   }
 }
-
 .newhome.form-container input, .newhome.form-container textarea{
     border: #A358FF 1px solid;
     color: #121420;
@@ -802,7 +799,6 @@ body{
         color: white;
     }
 }
-
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
@@ -812,7 +808,6 @@ input[type=number] {
   -moz-appearance: textfield;
   appearance: textfield;
 }
-
 .form-container textarea{
   height: 110px;
 }
@@ -1623,12 +1618,42 @@ background: linear-gradient(75.7deg, #7125CF 0%, #121420 100%);
         transform: translateY(-5px);
     }
 }
-
-
-
-
-
-
+.top-sub-headline{
+    background: linear-gradient(180deg, #7125CF 0%, #FFFFFF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    border: 1px solid #BD98FF;
+    background-color: #12142080;
+    border-radius: 12px;
+    width: fit-content;
+}
+.mission-pillers-card{
+    background-color: var(--primary-dark);
+    border-radius: 14px;
+    border: 1px solid transparent;
+    &:hover{
+        transition: 0.3s ease-in;
+        border: 1px solid #7125CF;
+        box-shadow: 0 0 10px #ffffff7b;
+        transform: translateY(-5px);
+    }
+}
+.pillers-icon{
+    background-color: white;
+    border-radius: 50%;
+}
+.cta-box{
+    background-color: #12142080;
+}
+.vision-points li{
+    background-color: var(--primary-color);
+}
+.vision-box{
+    background-color: #121420;
+    border-radius: 14px;
+}
 
 
 
