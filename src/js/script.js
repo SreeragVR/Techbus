@@ -19,7 +19,13 @@ document.addEventListener('DOMContentLoaded', ()=>{
     }
 
 const dropDowns = document.querySelectorAll('.drop-down-box')
-
+if(dropDowns){
+  const disableScroll = () => {
+  document.body.style.overflow = 'hidden'
+}
+const enableScroll = () => {
+  document.body.style.overflow = ''
+}
 dropDowns.forEach((drop) => {
   const dropButton = drop.querySelector('.drop-down-box-button')
   const dropListBox = drop.querySelector('.drop-down-box-list')
@@ -27,16 +33,22 @@ dropDowns.forEach((drop) => {
   const links = drop.querySelectorAll('.down-link')
   dropButton.addEventListener('click', (e) => {
     e.stopPropagation()
+    let isOpen = dropListBox.classList.contains('drop-active')
     dropDowns.forEach((otherDrop) => {
-      if (otherDrop !== drop) {
-        otherDrop.querySelector('.drop-down-box-list')
-          .classList.remove('drop-active')
-        otherDrop.querySelector('.drop-down-box-button svg')
-          .classList.remove('rotate-icon')
-      }
+      otherDrop.querySelector('.drop-down-box-list')
+        .classList.remove('drop-active')
+      otherDrop.querySelector('.drop-down-box-button svg')
+        .classList.remove('rotate-icon')
     })
-    dropListBox.classList.toggle('drop-active')
-    dropIcon.classList.toggle('rotate-icon')
+    if (!isOpen) {
+      dropListBox.classList.add('drop-active')
+      dropIcon.classList.add('rotate-icon')
+      disableScroll()
+    } else {
+      dropListBox.classList.remove('drop-active')
+      dropIcon.classList.remove('rotate-icon')
+      enableScroll()
+    }
   })
   links.forEach((link) => {
     link.addEventListener('click', (e) => e.stopPropagation())
@@ -45,11 +57,14 @@ dropDowns.forEach((drop) => {
 document.addEventListener('click', () => {
   dropDowns.forEach((drop) => {
     drop.querySelector('.drop-down-box-list')
-      .classList.remove('drop-active');
+      .classList.remove('drop-active')
     drop.querySelector('.drop-down-box-button svg')
       .classList.remove('rotate-icon')
   })
+  enableScroll()
 })
+}
+
 
     const closeForm = document.querySelectorAll('.close-popup')
     const popContainer = document.querySelector('.popup-back')
@@ -119,20 +134,6 @@ document.addEventListener('click', () => {
       })
     })
     }
-  const buttons = document.querySelectorAll('.service-btn');
-  const contents = document.querySelectorAll('.service-content');
-
-  buttons.forEach(button => {
-    button.addEventListener('click', () => {
-      // remove active from all
-      buttons.forEach(btn => btn.classList.remove('active'));
-      contents.forEach(content => content.classList.remove('active'));
-
-      // activate clicked
-      button.classList.add('active');
-      document.getElementById(button.dataset.target).classList.add('active');
-    })
-  })
 
     if(document.querySelector('.homeserviceSwiper')){
       const homeserviceSwiper = new Swiper(".homeserviceSwiper", {
