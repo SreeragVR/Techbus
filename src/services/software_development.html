@@ -16,147 +16,136 @@
 </head>
 <body>
 
-    <!-- HEADER -->
-     <header class="px-5 sm:px-7 md:px-9 lg:px-10 py-5 md:py-6 lg:py-8 fixed top-0 z-8 w-full from-top">
-        <div class="flex items-center justify-between gap-4">
-            <a href="../home.html">
-                <img src="../assets/TECHBUS_LOGO_WHITE.png" alt="LOGO" loading="lazy" class="h-9 md:h-10 lg:h-11 object-contain">
-            </a>
+  <!-- HEADER -->
+  <header class="px-5 sm:px-7 md:px-9 lg:px-10 py-5 md:py-6 lg:py-8 fixed top-0 z-8 w-full from-top">
+    <div class="flex items-center justify-between gap-4">
+        <a href="../home.html">
+            <img src="../assets/TECHBUS_LOGO_WHITE.png" alt="LOGO" loading="lazy" class="h-9 md:h-10 lg:h-11 object-contain">
+        </a>
 
-            <div class="py-6 sm:py-7 md:py-8 lg:py-0 px-5 sm:px-7 md:px-9 lg:px-0" id="navbar">
-                <!-- NAVBAR -->
-                 <div class="flex flex-col lg:flex-row items-end lg:items-center justify-start lg:justify-between gap-5 max-h-fit">
-                    <nav class="flex items-center justify-end w-full gap-5 me-0 lg:me-10">
-                        <ul class="flex flex-col lg:flex-row items-end lg:items-center w-full gap-4 lg:gap-10">
-                            <a href="../index.html" class="nav_link text-end lg:text-center"><li>Home</li></a>
-                            <div class="drop-down drop-down-box w-full">
-                              <div class="flex items-center justify-end lg:justify-center gap-1 drop-down-box-button nav_link text-end lg:text-center">
-                                About
+        <div class="py-6 sm:py-7 md:py-8 lg:py-0 px-5 sm:px-7 md:px-9 lg:px-0" id="navbar">
+            <!-- NAVBAR -->
+              <div class="flex flex-col lg:flex-row items-end lg:items-center justify-start lg:justify-between gap-5 max-h-fit">
+                <nav class="flex items-center justify-end w-full gap-5 me-0 lg:me-10">
+                    <ul class="flex flex-col lg:flex-row items-end lg:items-center w-full gap-4 lg:gap-10">
+                        <a href="../index.html" class="nav_link text-end lg:text-center"><li>Home</li></a>
+                        <div class="drop-down drop-down-box w-full">
+                          <div class="flex items-center justify-end lg:justify-center gap-1 drop-down-box-button nav_link text-end lg:text-center">
+                            About
+                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.625 13.9917L12.8917 11.725C12.9489 11.6636 13.0179 11.6143 13.0946 11.5802C13.1713 11.546 13.254 11.5277 13.3379 11.5262C13.4219 11.5247 13.5052 11.5401 13.583 11.5716C13.6609 11.603 13.7316 11.6498 13.7909 11.7091C13.8503 11.7685 13.897 11.8392 13.9285 11.917C13.9599 11.9948 13.9754 12.0782 13.9739 12.1621C13.9724 12.246 13.954 12.3288 13.9199 12.4054C13.8857 12.4821 13.8365 12.5511 13.775 12.6083L10.4417 15.9417C10.3245 16.0587 10.1657 16.1244 10 16.1244C9.83442 16.1244 9.67557 16.0587 9.55838 15.9417L6.22505 12.6083C6.16364 12.5511 6.11439 12.4821 6.08023 12.4054C6.04607 12.3288 6.0277 12.246 6.02622 12.1621C6.02474 12.0782 6.04018 11.9948 6.07161 11.917C6.10305 11.8392 6.14983 11.7685 6.20918 11.7091C6.26853 11.6498 6.33922 11.603 6.41705 11.5716C6.49487 11.5401 6.57823 11.5247 6.66215 11.5262C6.74607 11.5277 6.82883 11.546 6.90549 11.5802C6.98216 11.6143 7.05116 11.6636 7.10838 11.725L9.37505 13.9917V5.91666C9.37505 5.7509 9.4409 5.59193 9.55811 5.47472C9.67532 5.35751 9.83429 5.29166 10 5.29166C10.1658 5.29166 10.3248 5.35751 10.442 5.47472C10.5592 5.59193 10.625 5.7509 10.625 5.91666V13.9917Z" 
+                                fill="currentColor"/>
+                            </svg>
+                          </div>
+                          <div class="drop-down-box-list down-list">
+                            <ul class="px-8 py-6 w-full flex flex-col gap-4">
+                              <a href="../about.html" class="mega-link down-link">
+                                <li class="text-right lg:text-start">About Us</li>
+                              </a> 
+                              <a href="../mission.html" class="mega-link down-link">
+                                <li class="text-right lg:text-start">Mission</li>
+                              </a> 
+                              <a href="../vision.html" class="mega-link down-link">
+                                <li class="text-right lg:text-start">Vision</li>
+                              </a> 
+                            </ul>
+                          </div>
+                        </div>
+
+                        <div class="drop-down-list drop-down-box-list px-0 lg:px-10">
+                                <ul class="drop-box grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-5 lg:gap-6 lg:p-4 md:p-3.5 sm:p-3 p-2.5 overflow-y-auto">
+                                    <a href="../products/medbus_Software.html" class="drop-link flex flex-col items-center gap-2.5 p-3.5 text-center down-link">
+                                        <img src="../assets/images/demo_1.webp" alt="demo_1" loading="lazy" class="w-full rounded-lg border border-[#12142015] object-cover">
+                                        <li>MEDBUS</li>
+                                    </a> 
+                                    <a href="../products/service_bus.html" class="drop-link flex flex-col items-center gap-2.5 p-3.5 text-center down-link">
+                                        <img src="../assets/images/demo_2.webp" alt="demo_2" loading="lazy" class="w-full rounded-lg border border-[#12142015]  object-cover">
+                                        <li>Service Bus – Field Service Management</li>
+                                    </a>
+                                    <a href="../products/buscrm.html" class="drop-link flex flex-col items-center gap-2.5 p-3.5 text-center down-link">
+                                        <img src="../assets/images/demo_1.webp" alt="demo_1" loading="lazy" class="w-full rounded-lg border border-[#12142015] object-cover">
+                                        <li>Bus CRM – Business CRM Solution</li>
+                                    </a>
+                                    <a href="../products/medbus_Software.html" class="drop-link flex flex-col items-center gap-2.5 p-3.5 text-center down-link">
+                                        <img src="../assets/images/demo_2.webp" alt="demo_2" loading="lazy" class="w-full rounded-lg border border-[#12142015]  object-cover">
+                                        <li>Bus Warehouse Management – Inventory &amp; Warehouse</li>
+                                    </a>
+                                    <a href="../products/service_bus.html" class="drop-link flex flex-col items-center gap-2.5 p-3.5 text-center down-link">
+                                        <img src="../assets/images/demo_1.webp" alt="demo_1" loading="lazy" class="w-full rounded-lg border border-[#12142015] object-cover">
+                                        <li>Bus HRMS – Human Resource Management System</li>
+                                    </a>
+                                    <a href="../products/buscrm.html" class="drop-link flex flex-col items-center gap-2.5 p-3.5 text-center down-link">
+                                        <img src="../assets/images/demo_2.webp" alt="demo_2" loading="lazy" class="w-full rounded-lg border border-[#12142015]  object-cover">
+                                        <li>Bus Exam – Online Exam Portal</li>
+                                    </a>
+                                    <a href="../products/medbus_Software.html" class="drop-link flex flex-col items-center gap-2.5 p-3.5 text-center down-link">
+                                        <img src="../assets/images/demo_1.webp" alt="demo_1" loading="lazy" class="w-full rounded-lg border border-[#12142015] object-cover">
+                                        <li>Bus ERP – Enterprise Resource Planning Software</li>
+                                    </a>
+                                    <a href="../products/service_bus.html" class="drop-link flex flex-col items-center gap-2.5 p-3.5 text-center down-link">
+                                        <img src="../assets/images/demo_2.webp" alt="demo_2" loading="lazy" class="w-full rounded-lg border border-[#12142015]  object-cover">
+                                        <li>Business Setup ERP – UAE Business Setup Management</li>
+                                    </a>
+                                </ul>
+                            </div>
+
+                        <div class="mega-menu w-full drop-down-box">
+                            <div class="flex items-center justify-end lg:justify-center  gap-1 nav_link mega-button drop-down-box-button">
+                                Service
                                 <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M10.625 13.9917L12.8917 11.725C12.9489 11.6636 13.0179 11.6143 13.0946 11.5802C13.1713 11.546 13.254 11.5277 13.3379 11.5262C13.4219 11.5247 13.5052 11.5401 13.583 11.5716C13.6609 11.603 13.7316 11.6498 13.7909 11.7091C13.8503 11.7685 13.897 11.8392 13.9285 11.917C13.9599 11.9948 13.9754 12.0782 13.9739 12.1621C13.9724 12.246 13.954 12.3288 13.9199 12.4054C13.8857 12.4821 13.8365 12.5511 13.775 12.6083L10.4417 15.9417C10.3245 16.0587 10.1657 16.1244 10 16.1244C9.83442 16.1244 9.67557 16.0587 9.55838 15.9417L6.22505 12.6083C6.16364 12.5511 6.11439 12.4821 6.08023 12.4054C6.04607 12.3288 6.0277 12.246 6.02622 12.1621C6.02474 12.0782 6.04018 11.9948 6.07161 11.917C6.10305 11.8392 6.14983 11.7685 6.20918 11.7091C6.26853 11.6498 6.33922 11.603 6.41705 11.5716C6.49487 11.5401 6.57823 11.5247 6.66215 11.5262C6.74607 11.5277 6.82883 11.546 6.90549 11.5802C6.98216 11.6143 7.05116 11.6636 7.10838 11.725L9.37505 13.9917V5.91666C9.37505 5.7509 9.4409 5.59193 9.55811 5.47472C9.67532 5.35751 9.83429 5.29166 10 5.29166C10.1658 5.29166 10.3248 5.35751 10.442 5.47472C10.5592 5.59193 10.625 5.7509 10.625 5.91666V13.9917Z" 
                                     fill="currentColor"/>
                                 </svg>
-                              </div>
-                              <div class="drop-down-box-list down-list">
-                                <ul class="px-8 py-6 w-full flex flex-col gap-4">
-                                  <a href="../about.html" class="mega-link down-link">
-                                    <li class="text-right lg:text-start">About Us</li>
-                                  </a> 
-                                  <a href="../mission.html" class="mega-link down-link">
-                                    <li class="text-right lg:text-start">Mission</li>
-                                  </a> 
-                                  <a href="../vision.html" class="mega-link down-link">
-                                    <li class="text-right lg:text-start">Vision</li>
-                                  </a> 
+                            </div>
+
+                            <div class="mega-menu-list drop-down-box-list px-0 lg:px-10">
+                                <ul class="menu-box w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-5 lg:gap-6 lg:p-6 md:p-5 sm:p-4 p-3">
+                                    <div class="flex flex-col w-full h-fit mega-link-box down-link">
+                                        <h5 class="rubik text-lg border-b border-white text-white mb-3">Web Development</h5>
+                                        <div class="flex flex-col gap-3">
+                                        <a href="../services/software_development.html" class="mega-link"><li>Software Development</li></a>
+                                        <a href="#" class="mega-link"><li>Service 02</li></a>
+                                        <a href="#" class="mega-link"><li>Service 03</li></a>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex flex-col w-full h-fit mega-link-box down-link">
+                                        <h5 class="rubik text-lg border-b border-white text-white mb-3">Digital Marketing</h5>
+                                        <div class="flex flex-col gap-3">
+                                        <a href="../services/digital-marketing.html" class="mega-link"><li>Digital Marketing</li></a>
+                                        <a href="#" class="mega-link"><li>Service 02</li></a>
+                                        <a href="#" class="mega-link"><li>Service 03</li></a>
+                                        </div>
+                                    </div>
+
                                 </ul>
-                              </div>
                             </div>
 
-                            <div class="drop-down w-full drop-down-box">
+                        </div>
 
-                                <div class="flex items-center justify-end lg:justify-center gap-1 nav_link drop-button drop-down-box-button">
-                                    Product
-                                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M10.625 13.9917L12.8917 11.725C12.9489 11.6636 13.0179 11.6143 13.0946 11.5802C13.1713 11.546 13.254 11.5277 13.3379 11.5262C13.4219 11.5247 13.5052 11.5401 13.583 11.5716C13.6609 11.603 13.7316 11.6498 13.7909 11.7091C13.8503 11.7685 13.897 11.8392 13.9285 11.917C13.9599 11.9948 13.9754 12.0782 13.9739 12.1621C13.9724 12.246 13.954 12.3288 13.9199 12.4054C13.8857 12.4821 13.8365 12.5511 13.775 12.6083L10.4417 15.9417C10.3245 16.0587 10.1657 16.1244 10 16.1244C9.83442 16.1244 9.67557 16.0587 9.55838 15.9417L6.22505 12.6083C6.16364 12.5511 6.11439 12.4821 6.08023 12.4054C6.04607 12.3288 6.0277 12.246 6.02622 12.1621C6.02474 12.0782 6.04018 11.9948 6.07161 11.917C6.10305 11.8392 6.14983 11.7685 6.20918 11.7091C6.26853 11.6498 6.33922 11.603 6.41705 11.5716C6.49487 11.5401 6.57823 11.5247 6.66215 11.5262C6.74607 11.5277 6.82883 11.546 6.90549 11.5802C6.98216 11.6143 7.05116 11.6636 7.10838 11.725L9.37505 13.9917V5.91666C9.37505 5.7509 9.4409 5.59193 9.55811 5.47472C9.67532 5.35751 9.83429 5.29166 10 5.29166C10.1658 5.29166 10.3248 5.35751 10.442 5.47472C10.5592 5.59193 10.625 5.7509 10.625 5.91666V13.9917Z" 
-                                        fill="currentColor"/>
-                                    </svg>
-                                </div>
+                        <a href="../contact.html" class="nav_link text-end lg:text-center"><li>Contact</li></a>
 
-                                <div class="drop-down-list drop-down-box-list px-0 lg:px-10">
-                                    <ul class="drop-box grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-5 lg:gap-6 lg:p-4 md:p-3.5 sm:p-3 p-2.5">
-                                        <a href="../products/medbus_Software.html" class="drop-link flex flex-col items-center gap-2.5 p-3.5 text-center down-link">
-                                            <img src="../assets/images/demo_1.webp" alt="demo_1" loading="lazy" class="w-full rounded-lg border border-[#12142015] object-cover">
-                                            <li>MEDBUS</li>
-                                        </a> 
-                                        <a href="../products/service_bus.html" class="drop-link flex flex-col items-center gap-2.5 p-3.5 text-center down-link">
-                                            <img src="../assets/images/demo_2.webp" alt="demo_2" loading="lazy" class="w-full rounded-lg border border-[#12142015]  object-cover">
-                                            <li>Service Bus – Field Service Management</li>
-                                        </a>
-                                        <a href="../products/medbus_Software.html" class="drop-link flex flex-col items-center gap-2.5 p-3.5 text-center down-link">
-                                            <img src="../assets/images/demo_1.webp" alt="demo_1" loading="lazy" class="w-full rounded-lg border border-[#12142015] object-cover">
-                                            <li>Bus CRM – Business CRM Solution</li>
-                                        </a>
-                                        <a href="../products/service_bus.html" class="drop-link flex flex-col items-center gap-2.5 p-3.5 text-center down-link">
-                                            <img src="../assets/images/demo_2.webp" alt="demo_2" loading="lazy" class="w-full rounded-lg border border-[#12142015]  object-cover">
-                                            <li>Bus Warehouse Management – Inventory &amp; Warehouse</li>
-                                        </a>
-                                        <a href="../products/medbus_Software.html" class="drop-link flex flex-col items-center gap-2.5 p-3.5 text-center down-link">
-                                            <img src="../assets/images/demo_1.webp" alt="demo_1" loading="lazy" class="w-full rounded-lg border border-[#12142015] object-cover">
-                                            <li>Bus HRMS – Human Resource Management System</li>
-                                        </a>
-                                        <a href="../products/service_bus.html" class="drop-link flex flex-col items-center gap-2.5 p-3.5 text-center down-link">
-                                            <img src="../assets/images/demo_2.webp" alt="demo_2" loading="lazy" class="w-full rounded-lg border border-[#12142015]  object-cover">
-                                            <li>Bus Exam – Online Exam Portal</li>
-                                        </a>
-                                        <a href="../products/medbus_Software.html" class="drop-link flex flex-col items-center gap-2.5 p-3.5 text-center down-link">
-                                            <img src="../assets/images/demo_1.webp" alt="demo_1" loading="lazy" class="w-full rounded-lg border border-[#12142015] object-cover">
-                                            <li>Bus ERP – Enterprise Resource Planning Software</li>
-                                        </a>
-                                        <a href="../products/service_bus.html" class="drop-link flex flex-col items-center gap-2.5 p-3.5 text-center down-link">
-                                            <img src="../assets/images/demo_2.webp" alt="demo_2" loading="lazy" class="w-full rounded-lg border border-[#12142015]  object-cover">
-                                            <li>Business Setup ERP – UAE Business Setup Management</li>
-                                        </a>
-                                    </ul>
-                                </div>
-                            </div>
+                    </ul>
+                </nav>
 
-                            <div class="mega-menu w-full drop-down-box">
-                                <div class="flex items-center justify-end lg:justify-center  gap-1 nav_link mega-button drop-down-box-button">
-                                    Service
-                                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M10.625 13.9917L12.8917 11.725C12.9489 11.6636 13.0179 11.6143 13.0946 11.5802C13.1713 11.546 13.254 11.5277 13.3379 11.5262C13.4219 11.5247 13.5052 11.5401 13.583 11.5716C13.6609 11.603 13.7316 11.6498 13.7909 11.7091C13.8503 11.7685 13.897 11.8392 13.9285 11.917C13.9599 11.9948 13.9754 12.0782 13.9739 12.1621C13.9724 12.246 13.954 12.3288 13.9199 12.4054C13.8857 12.4821 13.8365 12.5511 13.775 12.6083L10.4417 15.9417C10.3245 16.0587 10.1657 16.1244 10 16.1244C9.83442 16.1244 9.67557 16.0587 9.55838 15.9417L6.22505 12.6083C6.16364 12.5511 6.11439 12.4821 6.08023 12.4054C6.04607 12.3288 6.0277 12.246 6.02622 12.1621C6.02474 12.0782 6.04018 11.9948 6.07161 11.917C6.10305 11.8392 6.14983 11.7685 6.20918 11.7091C6.26853 11.6498 6.33922 11.603 6.41705 11.5716C6.49487 11.5401 6.57823 11.5247 6.66215 11.5262C6.74607 11.5277 6.82883 11.546 6.90549 11.5802C6.98216 11.6143 7.05116 11.6636 7.10838 11.725L9.37505 13.9917V5.91666C9.37505 5.7509 9.4409 5.59193 9.55811 5.47472C9.67532 5.35751 9.83429 5.29166 10 5.29166C10.1658 5.29166 10.3248 5.35751 10.442 5.47472C10.5592 5.59193 10.625 5.7509 10.625 5.91666V13.9917Z" 
-                                        fill="currentColor"/>
-                                    </svg>
-                                </div>
-
-                                <div class="mega-menu-list drop-down-box-list px-0 lg:px-10">
-                                    <ul class="menu-box w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-5 lg:gap-6 lg:p-6 md:p-5 sm:p-4 p-3">
-                                        <div class="flex flex-col w-full h-fit mega-link-box down-link">
-                                            <h5 class="rubik text-lg border-b border-white text-white mb-3">Web Development</h5>
-                                            <div class="flex flex-col gap-3">
-                                            <a href="../services/software_development.html" class="mega-link"><li>Software Development</li></a>
-                                            <a href="#" class="mega-link"><li>Service 02</li></a>
-                                            <a href="#" class="mega-link"><li>Service 03</li></a>
-                                            </div>
-                                        </div>
-
-                                        <div class="flex flex-col w-full h-fit mega-link-box down-link">
-                                            <h5 class="rubik text-lg border-b border-white text-white mb-3">Digital Marketing</h5>
-                                            <div class="flex flex-col gap-3">
-                                            <a href="../services/digital-marketing.html" class="mega-link"><li>Digital Marketing</li></a>
-                                            <a href="#" class="mega-link"><li>Service 02</li></a>
-                                            <a href="#" class="mega-link"><li>Service 03</li></a>
-                                            </div>
-                                        </div>
-
-                                    </ul>
-                                </div>
-
-                            </div>
-
-                            <a href="../contact.html" class="nav_link text-end lg:text-center"><li>Contact</li></a>
-
-                        </ul>
-                    </nav>
-
-                    <button class="block font-bold raleway px-4 py-2.5 min-w-[176px] cta-button whitespace-nowrap cursor-pointer form-view">
-                        GET IN TOUCH
-                    </button>
-                 </div>
-            </div>
-
-              <div id="menuToggle" class="block min-lg:hidden">
-                <input id="toggleCheckbox" class="hidden" type="checkbox">
-                <label class="toggle cursor-pointer relative" for="toggleCheckbox">
-                    <div class="bar bar--top"></div>
-                    <div class="bar bar--middle"></div>
-                    <div class="bar bar--bottom"></div>
-                </label>
+                <button class="block font-bold raleway px-4 py-2.5 min-w-[176px] cta-button whitespace-nowrap cursor-pointer form-view">
+                    GET IN TOUCH
+                </button>
               </div>
-
         </div>
-     </header>
-    <!-- HEADER -->
+
+          <div id="menuToggle" class="block min-lg:hidden">
+            <input id="toggleCheckbox" class="hidden" type="checkbox">
+            <label class="toggle cursor-pointer relative" for="toggleCheckbox">
+                <div class="bar bar--top"></div>
+                <div class="bar bar--middle"></div>
+                <div class="bar bar--bottom"></div>
+            </label>
+          </div>
+
+    </div>
+  </header>
+  <!-- HEADER -->
 
   <!-- HERO SECTION -->
   <section class="px-5 sm:px-7 md:px-9 lg:px-10 pattern-banner overflow-hidden ">  
@@ -300,68 +289,68 @@
         <p class="raleway text-sm md:text-[15px] leading-[22px] md:leading-6 text-white text-center mt-5 sm:mt-6 md:mt-7 lg:mt-8 from-bottom">
           From on-demand service apps to eCommerce apps and social platforms, we create solutions that give your business a mobile edge.
         </p>
-      </section>
+    </section>
 
-      <section class="px-5 sm:px-7 md:px-9 lg:px-10 pb-12 sm:pb-14 md:pb-16 lg:pb-20 xl:pb-24">
-        <div class="relative service-background" style="--service-background:url('../assets/images/custom_software_solution.webp')">
-            <div class="relative z-2 black-gradient flex flex-col items-center px-5 sm:px-7 md:px-9 lg:px-10 py-16 sm:py-32 md:py-40 lg:py-44">
-            <h2 class="rubik font-bold text-[32px] sm:text-[38px] md:text-[46px] lg:text-[52px]  xl:text-[56px] leading-[36px] sm:leading-[40px] md:leading-[44px] lg:leading-[56px] xl:leading-[60px] text-white text-center mb-3 sm:mb-5 md:mb-6 from-bottom"
-              >Custom Software Solutions
-              </h2>
-              <p class="raleway text-sm md:text-[15px] leading-[22px] md:leading-6 text-white text-center w-full sm:w-10/12 md:w-8/12 lg:w-1/2 from-bottom">
-                Every business has unique requirements that off-the-shelf software can’t always meet. That’s where
-                we come in. We build tailored software solutions to help you optimize workflows, improve
-                productivity, and gain a competitive advantage.
-              </p>
+    <section class="px-5 sm:px-7 md:px-9 lg:px-10 pb-12 sm:pb-14 md:pb-16 lg:pb-20 xl:pb-24">
+      <div class="relative service-background" style="--service-background:url('../assets/images/custom_software_solution.webp')">
+          <div class="relative z-2 black-gradient flex flex-col items-center px-5 sm:px-7 md:px-9 lg:px-10 py-16 sm:py-32 md:py-40 lg:py-44">
+          <h2 class="rubik font-bold text-[32px] sm:text-[38px] md:text-[46px] lg:text-[52px]  xl:text-[56px] leading-[36px] sm:leading-[40px] md:leading-[44px] lg:leading-[56px] xl:leading-[60px] text-white text-center mb-3 sm:mb-5 md:mb-6 from-bottom"
+            >Custom Software Solutions
+            </h2>
+            <p class="raleway text-sm md:text-[15px] leading-[22px] md:leading-6 text-white text-center w-full sm:w-10/12 md:w-8/12 lg:w-1/2 from-bottom">
+              Every business has unique requirements that off-the-shelf software can’t always meet. That’s where
+              we come in. We build tailored software solutions to help you optimize workflows, improve
+              productivity, and gain a competitive advantage.
+            </p>
+          </div>
+      </div>
+
+      <div class="swiper serviceSwiper mt-7 sm:mt-8 md:mt-9 lg:mt-10">
+          <div class="swiper-wrapper pb-12">
+            <div class="swiper-slide">
+              <div class="flex flex-col gap-3.5 service-box px-3.5 sm:px-4 md:px-5 lg:px-6 py-6 sm:py-7 md:py-8 from-bottom">
+                <img src="../assets/images/enterprise_resource_planning.webp" loading="lazy" alt="icon" class="w-full rounded-xl">
+                <h4 class="text-white rubik text-xl font-semibold">Enterprise Resource Planning (ERP)</h4>
+                <p class="raleway text-xs md:text-sm leading-6 md:leading-[30px] text-white">
+                  Centralized systems to manage finance, HR, inventory, supply chain, and operations.
+                </p>
+              </div>
             </div>
+            <div class="swiper-slide">
+              <div class="flex flex-col gap-3.5 service-box px-3.5 sm:px-4 md:px-5 lg:px-6 py-6 sm:py-7 md:py-8 from-bottom">
+                <img src="../assets/images/customer_relationship_management.webp" loading="lazy" alt="icon" class="w-full rounded-xl">
+                <h4 class="text-white rubik text-xl font-semibold">Customer Relationship Management (CRM)</h4>
+                <p class="raleway text-xs md:text-sm leading-6 md:leading-[30px] text-white">
+                  Streamline lead management, customer communication, and sales pipelines.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="flex flex-col gap-3.5 service-box px-3.5 sm:px-4 md:px-5 lg:px-6 py-6 sm:py-7 md:py-8 from-bottom">
+                <img src="../assets/images/industry-specific_software.webp" loading="lazy" alt="icon" class="w-full rounded-xl">
+                <h4 class="text-white rubik text-xl font-semibold">Industry-Specific Software</h4>
+                <p class="raleway text-xs md:text-sm leading-6 md:leading-[30px] text-white">
+                  Solutions designed for healthcare, education, real estate, logistics, manufacturing, and more.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="flex flex-col gap-3.5 service-box px-3.5 sm:px-4 md:px-5 lg:px-6 py-6 sm:py-7 md:py-8 from-bottom">
+                <img src="../assets/images/process_automation_tools.webp" loading="lazy" alt="icon" class="w-full rounded-xl">
+                <h4 class="text-white rubik text-xl font-semibold">Process Automation Tools</h4>
+                <p class="raleway text-xs md:text-sm leading-6 md:leading-[30px] text-white">
+                  Eliminate repetitive manual tasks, reduce human error, and save time.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
         </div>
 
-        <div class="swiper serviceSwiper mt-7 sm:mt-8 md:mt-9 lg:mt-10">
-            <div class="swiper-wrapper pb-12">
-              <div class="swiper-slide">
-                <div class="flex flex-col gap-3.5 service-box px-3.5 sm:px-4 md:px-5 lg:px-6 py-6 sm:py-7 md:py-8 from-bottom">
-                  <img src="../assets/images/enterprise_resource_planning.webp" loading="lazy" alt="icon" class="w-full rounded-xl">
-                  <h4 class="text-white rubik text-xl font-semibold">Enterprise Resource Planning (ERP)</h4>
-                  <p class="raleway text-xs md:text-sm leading-6 md:leading-[30px] text-white">
-                    Centralized systems to manage finance, HR, inventory, supply chain, and operations.
-                  </p>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="flex flex-col gap-3.5 service-box px-3.5 sm:px-4 md:px-5 lg:px-6 py-6 sm:py-7 md:py-8 from-bottom">
-                  <img src="../assets/images/customer_relationship_management.webp" loading="lazy" alt="icon" class="w-full rounded-xl">
-                  <h4 class="text-white rubik text-xl font-semibold">Customer Relationship Management (CRM)</h4>
-                  <p class="raleway text-xs md:text-sm leading-6 md:leading-[30px] text-white">
-                    Streamline lead management, customer communication, and sales pipelines.
-                  </p>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="flex flex-col gap-3.5 service-box px-3.5 sm:px-4 md:px-5 lg:px-6 py-6 sm:py-7 md:py-8 from-bottom">
-                  <img src="../assets/images/industry-specific_software.webp" loading="lazy" alt="icon" class="w-full rounded-xl">
-                  <h4 class="text-white rubik text-xl font-semibold">Industry-Specific Software</h4>
-                  <p class="raleway text-xs md:text-sm leading-6 md:leading-[30px] text-white">
-                    Solutions designed for healthcare, education, real estate, logistics, manufacturing, and more.
-                  </p>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="flex flex-col gap-3.5 service-box px-3.5 sm:px-4 md:px-5 lg:px-6 py-6 sm:py-7 md:py-8 from-bottom">
-                  <img src="../assets/images/process_automation_tools.webp" loading="lazy" alt="icon" class="w-full rounded-xl">
-                  <h4 class="text-white rubik text-xl font-semibold">Process Automation Tools</h4>
-                  <p class="raleway text-xs md:text-sm leading-6 md:leading-[30px] text-white">
-                    Eliminate repetitive manual tasks, reduce human error, and save time.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-pagination"></div>
-          </div>
-
-          <p class="raleway text-sm md:text-[15px] leading-[22px] md:leading-6 text-white text-center mt-5 sm:mt-6 md:mt-7 lg:mt-8">
-            Our custom solutions are built around your exact needs — ensuring efficiency, scalability, and ROI-driven results.
-          </p>
-      </section>
+        <p class="raleway text-sm md:text-[15px] leading-[22px] md:leading-6 text-white text-center mt-5 sm:mt-6 md:mt-7 lg:mt-8">
+          Our custom solutions are built around your exact needs — ensuring efficiency, scalability, and ROI-driven results.
+        </p>
+    </section>
   </div>
 
   <div class="vertical-gradient">
@@ -426,251 +415,251 @@
     </section>
   </div>
 
-    <!-- FOOTER -->
-    <footer class="px-5 sm:px-7 md:px-9 lg:px-10 py-12 sm:py-14 md:py-16 lg:py-20 xl:py-24 bg-[var(--primary-dark)]">
+  <!-- FOOTER -->
+  <footer class="px-5 sm:px-7 md:px-9 lg:px-10 py-12 sm:py-14 md:py-16 lg:py-20 xl:py-24 bg-[var(--primary-dark)]">
 
-     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[35%_25%_25%] xl:grid-cols-[40%_22%_22%] gap-10 md:gap-12 lg:gap-16 xl:gap-24">
-        <div class="md:col-span-2 lg:col-span-1 md:w-[65%] lg:w-full">
-          <a href="#">
-            <img src="../assets/TECHBUS_LOGO.png" alt="LOGO" class="w-28 object-contain" loading="lazy" >
-          </a>
-
-          <div class="flex flex-col sm:flex-row justify-between gap-12">
-            <div class="flex flex-col">
-              <h5 class="rubik font-semibold text-xl leading-9 text-white mb-8 mt-10" >Quick Links</h5>
-                <div class="flex flex-col gap-3.5">
-                  <a href="#" class="footer-link"
-                  >Website development</a> 
-                  <a href="#" class="footer-link"
-                  >Application Development</a>
-                  <a href="#" class="footer-link"
-                  >Custom E-commerce Websites</a>
-                  <a href="#" class="footer-link"
-                  >Search engine optimization(SEO)</a>
-                  <a href="#" class="footer-link"
-                  >Social Media Marketing</a>
-                </div>
-            </div>
-
-            <div class="flex flex-col">
-              <h5 class="rubik font-semibold text-xl leading-9 text-white mb-8 mt-10" >Company</h5>
-                <div class="flex flex-col gap-3.5">
-                  <a href="#" class="footer-link"
-                  >About Us</a> 
-                  <a href="#" class="footer-link"
-                  >Contact Us</a>
-                  <a href="#" class="footer-link"
-                  >Product</a>
-                  <a href="#" class="footer-link"
-                  >Service</a>
-                  <a href="#" class="footer-link"
-                  >Blog</a>
-                </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="">
-          <div class="flex flex-col gap-11">
-              <a href="#" class="box-link">
-                <h5 class="rubik font-semibold text-xl leading-9  mb-2.5">Custom Software Solutions</h5>
-                <p class="text-[15px] leading-6 rubik">Innovative, secure, and scalable software built to meet your business needs.</p>
-              </a>
-
-              <a href="#" class="box-link">
-                <h5 class="rubik font-semibold text-xl leading-9 mb-2.5">Branding & Identity Design</h5>
-                <p class="text-[15px] leading-6 rubik">Strategic branding solutions that define your identity and strengthen your market presence.</p>
-              </a>
-
-              <a href="#" class="box-link">
-                <h5 class="rubik font-semibold text-xl leading-9 mb-2.5">Ad Campaign Creation</h5>
-                <p class="text-[15px] leading-6 rubik">Smart, engaging ad campaigns built to grow your audience and drive sales.</p>
-              </a>
-          </div>
-        </div>
-
-        <div class="">
-          <div class="flex flex-col gap-11">
-              <a href="#" class="box-link">
-                <h5 class="rubik font-semibold text-xl leading-9 mb-2.5">Branding & Identity Design</h5>
-                <p class="text-[15px] leading-6 rubik">Custom iOS, Android, and hybrid apps designed to engage users and elevate your brand.</p>
-              </a>
-
-              <a href="#" class="box-link">
-                <h5 class="rubik font-semibold text-xl leading-9 mb-2.5">Multi-vendor Platforms</h5>
-                <p class="text-[15px] leading-6 rubik">Scalable and secure multi-vendor solutions designed to simplify management and boost sales.</p>
-              </a>
-
-              <a href="#" class="box-link">
-                <h5 class="rubik font-semibold text-xl leading-9 mb-2.5">Ad Campaign Creation</h5>
-                <p class="text-[15px] leading-6 rubik">Smart, engaging ad campaigns built to grow your audience and drive sales.</p>
-              </a>
-          </div>
-        </div>
-     </div>
-
-     <div class="grid grid-rows-2 md:grid-cols-3 lg:grid-cols-4 items-center mt-12">
-
-      <a href="#" class="xl:row-span-2 block">
-        <img src="../assets/full text white.webp" alt="LOGO" class="w-60">
-      </a>
-
-
-      <div class="flex flex-col md:row-start-2 md:row-end-3 xl:row-span-2">
-
-          <a href="#" target="_blank" class="flex gap-4 items-center footer-link mb-3 sm:mb-3.5 lg:mb-4"
-          >
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12 2C16.6945 2 20.5 5.8055 20.5 10.5C20.5035 12.5052 19.7947 14.4464 18.5 15.9775L18.489 15.9905L18.481 16H18.5L13.4555 21.3545C13.2685 21.5529 13.043 21.711 12.7927 21.819C12.5424 21.9271 12.2726 21.9828 12 21.9828C11.7274 21.9828 11.4576 21.9271 11.2073 21.819C10.957 21.711 10.7315 21.5529 10.5445 21.3545L5.5 16H5.519L5.5105 15.99L5.5 15.9775C4.20527 14.4464 3.49647 12.5052 3.5 10.5C3.5 5.8055 7.3055 2 12 2ZM12 3.25C7.996 3.25 4.75 6.496 4.75 10.5C4.75 12.29 5.397 13.926 6.4715 15.191L6.6255 15.372L11.454 20.4975C11.5241 20.572 11.6087 20.6313 11.7026 20.6718C11.7965 20.7124 11.8977 20.7333 12 20.7333C12.1023 20.7333 12.2035 20.7124 12.2974 20.6718C12.3913 20.6313 12.4759 20.572 12.546 20.4975L17.3745 15.3725L17.5285 15.191C18.6428 13.8823 19.2532 12.2188 19.25 10.5C19.25 6.496 16.004 3.25 12 3.25ZM12 7C12.9283 7 13.8185 7.36875 14.4749 8.02513C15.1313 8.6815 15.5 9.57174 15.5 10.5C15.5 11.4283 15.1313 12.3185 14.4749 12.9749C13.8185 13.6313 12.9283 14 12 14C11.0717 14 10.1815 13.6313 9.52513 12.9749C8.86875 12.3185 8.5 11.4283 8.5 10.5C8.5 9.57174 8.86875 8.6815 9.52513 8.02513C10.1815 7.36875 11.0717 7 12 7ZM12 8.25C11.7045 8.25 11.4119 8.3082 11.139 8.42127C10.866 8.53434 10.6179 8.70008 10.409 8.90901C10.2001 9.11794 10.0343 9.36598 9.92127 9.63896C9.8082 9.91194 9.75 10.2045 9.75 10.5C9.75 10.7955 9.8082 11.0881 9.92127 11.361C10.0343 11.634 10.2001 11.8821 10.409 12.091C10.6179 12.2999 10.866 12.4657 11.139 12.5787C11.4119 12.6918 11.7045 12.75 12 12.75C12.5967 12.75 13.169 12.5129 13.591 12.091C14.0129 11.669 14.25 11.0967 14.25 10.5C14.25 9.90326 14.0129 9.33097 13.591 8.90901C13.169 8.48705 12.5967 8.25 12 8.25Z" 
-              fill="currentColor"/>
-            </svg>
-            <span class="paragraph">Kochi, Kerala, India</span>
-          </a>
-
-          <a href="#" target="_blank" class="flex gap-4 items-center footer-link"
-          >
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M19.875 4.5H4.125C3.08947 4.5 2.25 5.33947 2.25 6.375V17.625C2.25 18.6605 3.08947 19.5 4.125 19.5H19.875C20.9105 19.5 21.75 18.6605 21.75 17.625V6.375C21.75 5.33947 20.9105 4.5 19.875 4.5Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M5.25 7.5L12 12.75L18.75 7.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-            <span class="paragraph">techbusekm@gmail.com</span>
-          </a>
-      </div>
-
-      <div class="xl:row-span-2 md:row-start-2 md:row-end-3">
-        <div class="flex items-center gap-3.5">
-              <a href="#instagram" target="_blank" class="footer-icon">
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <g clip-path="url(#clip0_194_43)">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M6.22087 0.888008C7.19837 0.843008 7.51004 0.833008 10 0.833008C12.49 0.833008 12.8017 0.843841 13.7784 0.888008C14.755 0.932174 15.4217 1.08801 16.005 1.31384C16.6159 1.54467 17.17 1.90551 17.6284 2.37217C18.095 2.82967 18.455 3.38301 18.685 3.99467C18.9117 4.57801 19.0667 5.24467 19.1117 6.21968C19.1567 7.19884 19.1667 7.51051 19.1667 9.99967C19.1667 12.4888 19.1559 12.8013 19.1117 13.7788C19.0675 14.7538 18.9117 15.4205 18.685 16.0038C18.4549 16.6155 18.0944 17.1698 17.6284 17.628C17.17 18.0947 16.6159 18.4547 16.005 18.6847C15.4217 18.9113 14.755 19.0663 13.78 19.1113C12.8017 19.1563 12.49 19.1663 10 19.1663C7.51004 19.1663 7.19837 19.1555 6.22087 19.1113C5.24587 19.0672 4.57921 18.9113 3.99587 18.6847C3.38418 18.4546 2.82994 18.094 2.37171 17.628C1.90552 17.1701 1.54466 16.6161 1.31421 16.0047C1.08837 15.4213 0.933374 14.7547 0.888374 13.7797C0.843374 12.8005 0.833374 12.4888 0.833374 9.99967C0.833374 7.51051 0.844207 7.19801 0.888374 6.22134C0.932541 5.24467 1.08837 4.57801 1.31421 3.99467C1.54491 3.38312 1.90606 2.82917 2.37254 2.37134C2.83021 1.90526 3.38386 1.5444 3.99504 1.31384C4.57837 1.08801 5.24587 0.933008 6.22087 0.888008ZM13.7034 2.53801C12.7367 2.49384 12.4467 2.48467 9.99921 2.48467C7.55171 2.48467 7.26171 2.49384 6.29504 2.53801C5.40087 2.57884 4.91587 2.72801 4.59254 2.85384C4.16504 3.02051 3.85921 3.21801 3.53837 3.53884C3.23398 3.8345 2.99989 4.19476 2.85337 4.59301C2.72754 4.91634 2.57837 5.40134 2.53754 6.29551C2.49337 7.26217 2.48421 7.55217 2.48421 9.99967C2.48421 12.4472 2.49337 12.7372 2.53754 13.7038C2.57837 14.598 2.72754 15.083 2.85337 15.4063C3.00004 15.8038 3.23421 16.1647 3.53837 16.4605C3.83421 16.7647 4.19504 16.9988 4.59254 17.1455C4.91587 17.2713 5.40087 17.4205 6.29504 17.4613C7.26171 17.5055 7.55087 17.5147 9.99921 17.5147C12.4475 17.5147 12.7367 17.5055 13.7034 17.4613C14.5975 17.4205 15.0825 17.2713 15.4059 17.1455C15.8334 16.9788 16.1392 16.7813 16.46 16.4605C16.7642 16.1647 16.9984 15.8038 17.145 15.4063C17.2709 15.083 17.42 14.598 17.4609 13.7038C17.505 12.7372 17.5142 12.4472 17.5142 9.99967C17.5142 7.55217 17.505 7.26217 17.4609 6.29551C17.42 5.40134 17.2709 4.91634 17.145 4.59301C16.9784 4.16551 16.7809 3.85967 16.46 3.53884C16.1644 3.23445 15.8041 3.00035 15.4059 2.85384C15.0825 2.72801 14.5975 2.57884 13.7034 2.53801ZM8.82837 12.8255C9.48226 13.0977 10.2104 13.1344 10.8883 12.9294C11.5663 12.7244 12.152 12.2904 12.5455 11.7015C12.9391 11.1126 13.1159 10.4054 13.0459 9.7006C12.9759 8.99579 12.6634 8.33715 12.1617 7.83717C11.8419 7.51757 11.4552 7.27285 11.0295 7.12063C10.6038 6.96841 10.1496 6.91248 9.69962 6.95685C9.24968 7.00123 8.81517 7.14482 8.42738 7.37728C8.03959 7.60974 7.70816 7.92529 7.45696 8.30122C7.20576 8.67714 7.04103 9.10408 6.97464 9.55131C6.90824 9.99854 6.94183 10.4549 7.07299 10.8876C7.20415 11.3203 7.42961 11.7185 7.73314 12.0536C8.03667 12.3887 8.41073 12.6523 8.82837 12.8255ZM6.66837 6.66801C7.1059 6.23049 7.62531 5.88343 8.19696 5.64664C8.7686 5.40986 9.38129 5.28799 10 5.28799C10.6188 5.28799 11.2315 5.40986 11.8031 5.64664C12.3748 5.88343 12.8942 6.23049 13.3317 6.66801C13.7692 7.10553 14.1163 7.62494 14.3531 8.19659C14.5899 8.76824 14.7117 9.38093 14.7117 9.99967C14.7117 10.6184 14.5899 11.2311 14.3531 11.8028C14.1163 12.3744 13.7692 12.8938 13.3317 13.3313C12.4481 14.215 11.2497 14.7114 10 14.7114C8.75042 14.7114 7.55199 14.215 6.66837 13.3313C5.78476 12.4477 5.28835 11.2493 5.28835 9.99967C5.28835 8.75006 5.78476 7.55162 6.66837 6.66801ZM15.7567 5.98968C15.8651 5.8874 15.9519 5.76441 16.012 5.62799C16.072 5.49156 16.104 5.34448 16.1062 5.19545C16.1084 5.04642 16.0806 4.89846 16.0246 4.76035C15.9686 4.62224 15.8854 4.49677 15.78 4.39137C15.6746 4.28598 15.5491 4.20281 15.411 4.14677C15.2729 4.09074 15.125 4.06299 14.9759 4.06516C14.8269 4.06733 14.6798 4.09939 14.5434 4.15942C14.407 4.21946 14.284 4.30625 14.1817 4.41467C13.9828 4.62553 13.8739 4.90561 13.8781 5.19545C13.8824 5.48529 13.9994 5.76207 14.2043 5.96704C14.4093 6.17201 14.6861 6.28903 14.9759 6.29326C15.2658 6.29748 15.5459 6.18858 15.7567 5.98968Z" 
-                  fill="currentColor"/>
-                  </g>
-                  <defs>
-                  <clipPath id="clip0_194_43">
-                  <rect width="20" height="20" fill="white"/>
-                  </clipPath>
-                  </defs>
-                </svg>
-
-              </a>
-
-              <a href="#facebook" target="_blank" class="footer-icon">
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M11.6667 11.2503H13.75L14.5834 7.91699H11.6667V6.25033C11.6667 5.39199 11.6667 4.58366 13.3334 4.58366H14.5834V1.78366C14.3117 1.74783 13.2859 1.66699 12.2025 1.66699C9.94004 1.66699 8.33337 3.04783 8.33337 5.58366V7.91699H5.83337V11.2503H8.33337V18.3337H11.6667V11.2503Z" 
-                  fill="currentColor"/>
-                </svg>
-              </a>
-
-              <a href="#linkedin" target="_blank" class="footer-icon" >
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M5.78329 4.16652C5.78306 4.60855 5.60726 5.03239 5.29454 5.34479C4.98182 5.6572 4.55781 5.83258 4.11578 5.83236C3.67376 5.83214 3.24992 5.65633 2.93752 5.34361C2.62511 5.0309 2.44973 4.60688 2.44995 4.16486C2.45017 3.72283 2.62598 3.29899 2.9387 2.98659C3.25141 2.67419 3.67542 2.4988 4.11745 2.49902C4.55948 2.49924 4.98331 2.67505 5.29572 2.98777C5.60812 3.30049 5.78351 3.7245 5.78329 4.16652ZM5.83329 7.06652H2.49995V17.4999H5.83329V7.06652ZM11.1 7.06652H7.78329V17.4999H11.0666V12.0249C11.0666 8.97486 15.0416 8.69152 15.0416 12.0249V17.4999H18.3333V10.8915C18.3333 5.74986 12.45 5.94152 11.0666 8.46652L11.1 7.06652Z" 
-                  fill="currentColor"/>
-                </svg>
-              </a>
-
-              <a href="#x" target="_blank" class="footer-icon">
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M8.74004 12.2092L12.7084 17.5H18.5417L11.9934 8.76833L17.4417 2.5H15.2334L10.9692 7.405L7.29171 2.5H1.45837L7.71671 10.8458L1.93337 17.5H4.14171L8.74004 12.2092ZM13.5417 15.8333L4.79171 4.16667H6.45837L15.2084 15.8333H13.5417Z" 
-                fill="currentColor"/>
-                </svg>
-              </a>
-        </div>
-
-         <p class="raleway font-light text-xs text-white leading-8 mt-4 md:mt-5"
-         >© 2025 <a href="#" target="_blank" class="tech-link">TECHBUS</a> — All rights reserved</p>
-      </div>
-
-
-      <div class="flex items-center sm:justify-center xl:row-span-2 lg:col-start-3 lg:col-end-5 lg:row-start-1 lg:row-end-3 xl:col-start-4 xl:col-end-5 md:col-start-3 md:col-end-4 md:row-start-1 md:row-end-3">
-        <a href="#" class="block w-fit">
-            <img src="../assets/new logo1.webp" loading="lazy" class="w-40 footer-LOGO" alt="LOGO">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[35%_25%_25%] xl:grid-cols-[40%_22%_22%] gap-10 md:gap-12 lg:gap-16 xl:gap-24">
+      <div class="md:col-span-2 lg:col-span-1 md:w-[65%] lg:w-full">
+        <a href="#">
+          <img src="../assets/TECHBUS_LOGO.png" alt="LOGO" class="w-28 object-contain" loading="lazy" >
         </a>
+
+        <div class="flex flex-col sm:flex-row justify-between gap-12">
+          <div class="flex flex-col">
+            <h5 class="rubik font-semibold text-xl leading-9 text-white mb-8 mt-10" >Quick Links</h5>
+              <div class="flex flex-col gap-3.5">
+                <a href="#" class="footer-link"
+                >Website development</a> 
+                <a href="#" class="footer-link"
+                >Application Development</a>
+                <a href="#" class="footer-link"
+                >Custom E-commerce Websites</a>
+                <a href="#" class="footer-link"
+                >Search engine optimization(SEO)</a>
+                <a href="#" class="footer-link"
+                >Social Media Marketing</a>
+              </div>
+          </div>
+
+          <div class="flex flex-col">
+            <h5 class="rubik font-semibold text-xl leading-9 text-white mb-8 mt-10" >Company</h5>
+              <div class="flex flex-col gap-3.5">
+                <a href="#" class="footer-link"
+                >About Us</a> 
+                <a href="#" class="footer-link"
+                >Contact Us</a>
+                <a href="#" class="footer-link"
+                >Product</a>
+                <a href="#" class="footer-link"
+                >Service</a>
+                <a href="#" class="footer-link"
+                >Blog</a>
+              </div>
+          </div>
+        </div>
       </div>
 
-     </div>
-    </footer>
-    <!-- FOOTER -->
+      <div class="">
+        <div class="flex flex-col gap-11">
+            <a href="#" class="box-link">
+              <h5 class="rubik font-semibold text-xl leading-9  mb-2.5">Custom Software Solutions</h5>
+              <p class="text-[15px] leading-6 rubik">Innovative, secure, and scalable software built to meet your business needs.</p>
+            </a>
 
-    <!-- POPUP FORM -->
-     <div class="popup-back px-5 sm:px-7 md:px-9 lg:px-10 hidden">
+            <a href="#" class="box-link">
+              <h5 class="rubik font-semibold text-xl leading-9 mb-2.5">Branding & Identity Design</h5>
+              <p class="text-[15px] leading-6 rubik">Strategic branding solutions that define your identity and strengthen your market presence.</p>
+            </a>
 
-      <div class="w-full h-screen flex justify-center items-center overflow-y-auto py-12 sm:py-14 md:py-16 lg:py-20 xl:py-24">
-        <form action="" id="popForm"  class="popup-form flex flex-col items-center w-full sm:w-3/4 md:w-3/5 lg:w-1/2 xl:w-2/5 2xl:w-1/3 py-6 sm:py-8 md:py-9 lg:py-10 px-6 sm:px-7 md:px-8 lg:px-10 overflow-hidden">
-          <div class="close-popup">
-            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M7.46663 21.3594L6.64062 20.5334L13.174 14L6.64062 7.46669L7.46663 6.64069L14 13.174L20.5333 6.64069L21.3593 7.46669L14.826 14L21.3593 20.5334L20.5333 21.3594L14 14.826L7.46663 21.3594Z" 
+            <a href="#" class="box-link">
+              <h5 class="rubik font-semibold text-xl leading-9 mb-2.5">Ad Campaign Creation</h5>
+              <p class="text-[15px] leading-6 rubik">Smart, engaging ad campaigns built to grow your audience and drive sales.</p>
+            </a>
+        </div>
+      </div>
+
+      <div class="">
+        <div class="flex flex-col gap-11">
+            <a href="#" class="box-link">
+              <h5 class="rubik font-semibold text-xl leading-9 mb-2.5">Branding & Identity Design</h5>
+              <p class="text-[15px] leading-6 rubik">Custom iOS, Android, and hybrid apps designed to engage users and elevate your brand.</p>
+            </a>
+
+            <a href="#" class="box-link">
+              <h5 class="rubik font-semibold text-xl leading-9 mb-2.5">Multi-vendor Platforms</h5>
+              <p class="text-[15px] leading-6 rubik">Scalable and secure multi-vendor solutions designed to simplify management and boost sales.</p>
+            </a>
+
+            <a href="#" class="box-link">
+              <h5 class="rubik font-semibold text-xl leading-9 mb-2.5">Ad Campaign Creation</h5>
+              <p class="text-[15px] leading-6 rubik">Smart, engaging ad campaigns built to grow your audience and drive sales.</p>
+            </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid grid-rows-2 md:grid-cols-3 lg:grid-cols-4 items-center mt-12">
+
+    <a href="#" class="xl:row-span-2 block">
+      <img src="../assets/full text white.webp" alt="LOGO" class="w-60">
+    </a>
+
+
+    <div class="flex flex-col md:row-start-2 md:row-end-3 xl:row-span-2">
+
+        <a href="#" target="_blank" class="flex gap-4 items-center footer-link mb-3 sm:mb-3.5 lg:mb-4"
+        >
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2C16.6945 2 20.5 5.8055 20.5 10.5C20.5035 12.5052 19.7947 14.4464 18.5 15.9775L18.489 15.9905L18.481 16H18.5L13.4555 21.3545C13.2685 21.5529 13.043 21.711 12.7927 21.819C12.5424 21.9271 12.2726 21.9828 12 21.9828C11.7274 21.9828 11.4576 21.9271 11.2073 21.819C10.957 21.711 10.7315 21.5529 10.5445 21.3545L5.5 16H5.519L5.5105 15.99L5.5 15.9775C4.20527 14.4464 3.49647 12.5052 3.5 10.5C3.5 5.8055 7.3055 2 12 2ZM12 3.25C7.996 3.25 4.75 6.496 4.75 10.5C4.75 12.29 5.397 13.926 6.4715 15.191L6.6255 15.372L11.454 20.4975C11.5241 20.572 11.6087 20.6313 11.7026 20.6718C11.7965 20.7124 11.8977 20.7333 12 20.7333C12.1023 20.7333 12.2035 20.7124 12.2974 20.6718C12.3913 20.6313 12.4759 20.572 12.546 20.4975L17.3745 15.3725L17.5285 15.191C18.6428 13.8823 19.2532 12.2188 19.25 10.5C19.25 6.496 16.004 3.25 12 3.25ZM12 7C12.9283 7 13.8185 7.36875 14.4749 8.02513C15.1313 8.6815 15.5 9.57174 15.5 10.5C15.5 11.4283 15.1313 12.3185 14.4749 12.9749C13.8185 13.6313 12.9283 14 12 14C11.0717 14 10.1815 13.6313 9.52513 12.9749C8.86875 12.3185 8.5 11.4283 8.5 10.5C8.5 9.57174 8.86875 8.6815 9.52513 8.02513C10.1815 7.36875 11.0717 7 12 7ZM12 8.25C11.7045 8.25 11.4119 8.3082 11.139 8.42127C10.866 8.53434 10.6179 8.70008 10.409 8.90901C10.2001 9.11794 10.0343 9.36598 9.92127 9.63896C9.8082 9.91194 9.75 10.2045 9.75 10.5C9.75 10.7955 9.8082 11.0881 9.92127 11.361C10.0343 11.634 10.2001 11.8821 10.409 12.091C10.6179 12.2999 10.866 12.4657 11.139 12.5787C11.4119 12.6918 11.7045 12.75 12 12.75C12.5967 12.75 13.169 12.5129 13.591 12.091C14.0129 11.669 14.25 11.0967 14.25 10.5C14.25 9.90326 14.0129 9.33097 13.591 8.90901C13.169 8.48705 12.5967 8.25 12 8.25Z" 
+            fill="currentColor"/>
+          </svg>
+          <span class="paragraph">Kochi, Kerala, India</span>
+        </a>
+
+        <a href="#" target="_blank" class="flex gap-4 items-center footer-link"
+        >
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M19.875 4.5H4.125C3.08947 4.5 2.25 5.33947 2.25 6.375V17.625C2.25 18.6605 3.08947 19.5 4.125 19.5H19.875C20.9105 19.5 21.75 18.6605 21.75 17.625V6.375C21.75 5.33947 20.9105 4.5 19.875 4.5Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M5.25 7.5L12 12.75L18.75 7.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span class="paragraph">techbusekm@gmail.com</span>
+        </a>
+    </div>
+
+    <div class="xl:row-span-2 md:row-start-2 md:row-end-3">
+      <div class="flex items-center gap-3.5">
+            <a href="#instagram" target="_blank" class="footer-icon">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_194_43)">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.22087 0.888008C7.19837 0.843008 7.51004 0.833008 10 0.833008C12.49 0.833008 12.8017 0.843841 13.7784 0.888008C14.755 0.932174 15.4217 1.08801 16.005 1.31384C16.6159 1.54467 17.17 1.90551 17.6284 2.37217C18.095 2.82967 18.455 3.38301 18.685 3.99467C18.9117 4.57801 19.0667 5.24467 19.1117 6.21968C19.1567 7.19884 19.1667 7.51051 19.1667 9.99967C19.1667 12.4888 19.1559 12.8013 19.1117 13.7788C19.0675 14.7538 18.9117 15.4205 18.685 16.0038C18.4549 16.6155 18.0944 17.1698 17.6284 17.628C17.17 18.0947 16.6159 18.4547 16.005 18.6847C15.4217 18.9113 14.755 19.0663 13.78 19.1113C12.8017 19.1563 12.49 19.1663 10 19.1663C7.51004 19.1663 7.19837 19.1555 6.22087 19.1113C5.24587 19.0672 4.57921 18.9113 3.99587 18.6847C3.38418 18.4546 2.82994 18.094 2.37171 17.628C1.90552 17.1701 1.54466 16.6161 1.31421 16.0047C1.08837 15.4213 0.933374 14.7547 0.888374 13.7797C0.843374 12.8005 0.833374 12.4888 0.833374 9.99967C0.833374 7.51051 0.844207 7.19801 0.888374 6.22134C0.932541 5.24467 1.08837 4.57801 1.31421 3.99467C1.54491 3.38312 1.90606 2.82917 2.37254 2.37134C2.83021 1.90526 3.38386 1.5444 3.99504 1.31384C4.57837 1.08801 5.24587 0.933008 6.22087 0.888008ZM13.7034 2.53801C12.7367 2.49384 12.4467 2.48467 9.99921 2.48467C7.55171 2.48467 7.26171 2.49384 6.29504 2.53801C5.40087 2.57884 4.91587 2.72801 4.59254 2.85384C4.16504 3.02051 3.85921 3.21801 3.53837 3.53884C3.23398 3.8345 2.99989 4.19476 2.85337 4.59301C2.72754 4.91634 2.57837 5.40134 2.53754 6.29551C2.49337 7.26217 2.48421 7.55217 2.48421 9.99967C2.48421 12.4472 2.49337 12.7372 2.53754 13.7038C2.57837 14.598 2.72754 15.083 2.85337 15.4063C3.00004 15.8038 3.23421 16.1647 3.53837 16.4605C3.83421 16.7647 4.19504 16.9988 4.59254 17.1455C4.91587 17.2713 5.40087 17.4205 6.29504 17.4613C7.26171 17.5055 7.55087 17.5147 9.99921 17.5147C12.4475 17.5147 12.7367 17.5055 13.7034 17.4613C14.5975 17.4205 15.0825 17.2713 15.4059 17.1455C15.8334 16.9788 16.1392 16.7813 16.46 16.4605C16.7642 16.1647 16.9984 15.8038 17.145 15.4063C17.2709 15.083 17.42 14.598 17.4609 13.7038C17.505 12.7372 17.5142 12.4472 17.5142 9.99967C17.5142 7.55217 17.505 7.26217 17.4609 6.29551C17.42 5.40134 17.2709 4.91634 17.145 4.59301C16.9784 4.16551 16.7809 3.85967 16.46 3.53884C16.1644 3.23445 15.8041 3.00035 15.4059 2.85384C15.0825 2.72801 14.5975 2.57884 13.7034 2.53801ZM8.82837 12.8255C9.48226 13.0977 10.2104 13.1344 10.8883 12.9294C11.5663 12.7244 12.152 12.2904 12.5455 11.7015C12.9391 11.1126 13.1159 10.4054 13.0459 9.7006C12.9759 8.99579 12.6634 8.33715 12.1617 7.83717C11.8419 7.51757 11.4552 7.27285 11.0295 7.12063C10.6038 6.96841 10.1496 6.91248 9.69962 6.95685C9.24968 7.00123 8.81517 7.14482 8.42738 7.37728C8.03959 7.60974 7.70816 7.92529 7.45696 8.30122C7.20576 8.67714 7.04103 9.10408 6.97464 9.55131C6.90824 9.99854 6.94183 10.4549 7.07299 10.8876C7.20415 11.3203 7.42961 11.7185 7.73314 12.0536C8.03667 12.3887 8.41073 12.6523 8.82837 12.8255ZM6.66837 6.66801C7.1059 6.23049 7.62531 5.88343 8.19696 5.64664C8.7686 5.40986 9.38129 5.28799 10 5.28799C10.6188 5.28799 11.2315 5.40986 11.8031 5.64664C12.3748 5.88343 12.8942 6.23049 13.3317 6.66801C13.7692 7.10553 14.1163 7.62494 14.3531 8.19659C14.5899 8.76824 14.7117 9.38093 14.7117 9.99967C14.7117 10.6184 14.5899 11.2311 14.3531 11.8028C14.1163 12.3744 13.7692 12.8938 13.3317 13.3313C12.4481 14.215 11.2497 14.7114 10 14.7114C8.75042 14.7114 7.55199 14.215 6.66837 13.3313C5.78476 12.4477 5.28835 11.2493 5.28835 9.99967C5.28835 8.75006 5.78476 7.55162 6.66837 6.66801ZM15.7567 5.98968C15.8651 5.8874 15.9519 5.76441 16.012 5.62799C16.072 5.49156 16.104 5.34448 16.1062 5.19545C16.1084 5.04642 16.0806 4.89846 16.0246 4.76035C15.9686 4.62224 15.8854 4.49677 15.78 4.39137C15.6746 4.28598 15.5491 4.20281 15.411 4.14677C15.2729 4.09074 15.125 4.06299 14.9759 4.06516C14.8269 4.06733 14.6798 4.09939 14.5434 4.15942C14.407 4.21946 14.284 4.30625 14.1817 4.41467C13.9828 4.62553 13.8739 4.90561 13.8781 5.19545C13.8824 5.48529 13.9994 5.76207 14.2043 5.96704C14.4093 6.17201 14.6861 6.28903 14.9759 6.29326C15.2658 6.29748 15.5459 6.18858 15.7567 5.98968Z" 
+                fill="currentColor"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_194_43">
+                <rect width="20" height="20" fill="white"/>
+                </clipPath>
+                </defs>
+              </svg>
+
+            </a>
+
+            <a href="#facebook" target="_blank" class="footer-icon">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11.6667 11.2503H13.75L14.5834 7.91699H11.6667V6.25033C11.6667 5.39199 11.6667 4.58366 13.3334 4.58366H14.5834V1.78366C14.3117 1.74783 13.2859 1.66699 12.2025 1.66699C9.94004 1.66699 8.33337 3.04783 8.33337 5.58366V7.91699H5.83337V11.2503H8.33337V18.3337H11.6667V11.2503Z" 
+                fill="currentColor"/>
+              </svg>
+            </a>
+
+            <a href="#linkedin" target="_blank" class="footer-icon" >
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.78329 4.16652C5.78306 4.60855 5.60726 5.03239 5.29454 5.34479C4.98182 5.6572 4.55781 5.83258 4.11578 5.83236C3.67376 5.83214 3.24992 5.65633 2.93752 5.34361C2.62511 5.0309 2.44973 4.60688 2.44995 4.16486C2.45017 3.72283 2.62598 3.29899 2.9387 2.98659C3.25141 2.67419 3.67542 2.4988 4.11745 2.49902C4.55948 2.49924 4.98331 2.67505 5.29572 2.98777C5.60812 3.30049 5.78351 3.7245 5.78329 4.16652ZM5.83329 7.06652H2.49995V17.4999H5.83329V7.06652ZM11.1 7.06652H7.78329V17.4999H11.0666V12.0249C11.0666 8.97486 15.0416 8.69152 15.0416 12.0249V17.4999H18.3333V10.8915C18.3333 5.74986 12.45 5.94152 11.0666 8.46652L11.1 7.06652Z" 
+                fill="currentColor"/>
+              </svg>
+            </a>
+
+            <a href="#x" target="_blank" class="footer-icon">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8.74004 12.2092L12.7084 17.5H18.5417L11.9934 8.76833L17.4417 2.5H15.2334L10.9692 7.405L7.29171 2.5H1.45837L7.71671 10.8458L1.93337 17.5H4.14171L8.74004 12.2092ZM13.5417 15.8333L4.79171 4.16667H6.45837L15.2084 15.8333H13.5417Z" 
               fill="currentColor"/>
-            </svg>
+              </svg>
+            </a>
+      </div>
+
+        <p class="raleway font-light text-xs text-white leading-8 mt-4 md:mt-5"
+        >© 2025 <a href="#" target="_blank" class="tech-link">TECHBUS</a> — All rights reserved</p>
+    </div>
+
+
+    <div class="flex items-center sm:justify-center xl:row-span-2 lg:col-start-3 lg:col-end-5 lg:row-start-1 lg:row-end-3 xl:col-start-4 xl:col-end-5 md:col-start-3 md:col-end-4 md:row-start-1 md:row-end-3">
+      <a href="#" class="block w-fit">
+          <img src="../assets/new logo1.webp" loading="lazy" class="w-40 footer-LOGO" alt="LOGO">
+      </a>
+    </div>
+
+    </div>
+  </footer>
+  <!-- FOOTER -->
+
+  <!-- POPUP FORM -->
+    <div class="popup-back px-5 sm:px-7 md:px-9 lg:px-10 hidden">
+
+    <div class="w-full h-screen flex justify-center items-center overflow-y-auto py-12 sm:py-14 md:py-16 lg:py-20 xl:py-24">
+      <form action="" id="popForm"  class="popup-form flex flex-col items-center w-full sm:w-3/4 md:w-3/5 lg:w-1/2 xl:w-2/5 2xl:w-1/3 py-6 sm:py-8 md:py-9 lg:py-10 px-6 sm:px-7 md:px-8 lg:px-10 overflow-hidden">
+        <div class="close-popup">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.46663 21.3594L6.64062 20.5334L13.174 14L6.64062 7.46669L7.46663 6.64069L14 13.174L20.5333 6.64069L21.3593 7.46669L14.826 14L21.3593 20.5334L20.5333 21.3594L14 14.826L7.46663 21.3594Z" 
+            fill="currentColor"/>
+          </svg>
+        </div>
+        <a href="../index.html">
+          <img src="../assets/TECHBUS_LOGO.webp" alt="LOGO" class="w-40 sm:w-52 md:w-72 relative z-1" loading="lazy">
+        </a>
+        <div class="flex flex-col gap-1.5 mt-6 relative z-1">
+          <h4 class="text-[var(--primary-dark)] rubik text-xl font-semibold text-center">Let’s Build the Right Tech for Your Business</h4>
+          <p class="raleway font-light text-sm md:text-[15px] leading-[22px] md:leading-[24px] text-[var(--primary-dark)] text-center">
+              Transform your ideas into powerful digital solutions with Techbus Tech Solutions.
+            </p>
+        </div>
+
+        <div class="flex flex-col gap-4 w-full mt-5 sm:mt-6 lg:mt-8 relative z-1">
+          <input type="text" placeholder="full name" name="fullName" required>
+          <div class="flex gap-3">
+            <input type="number" placeholder="phone number" name="phoneNumber" required>
+            <input type="email" placeholder="email address" name="emailAddress" required>
           </div>
-          <a href="../index.html">
-            <img src="../assets/TECHBUS_LOGO.webp" alt="LOGO" class="w-40 sm:w-52 md:w-72 relative z-1" loading="lazy">
-          </a>
-          <div class="flex flex-col gap-1.5 mt-6 relative z-1">
-            <h4 class="text-[var(--primary-dark)] rubik text-xl font-semibold text-center">Let’s Build the Right Tech for Your Business</h4>
-            <p class="raleway font-light text-sm md:text-[15px] leading-[22px] md:leading-[24px] text-[var(--primary-dark)] text-center">
-                Transform your ideas into powerful digital solutions with Techbus Tech Solutions.
-              </p>
+          <textarea name="" id="" placeholder="write your message" name="message"></textarea>
+
+          <button id="sendOtp" type="submit" class="block font-bold raleway px-4 py-2.5 min-w-[176px] pop-button whitespace-nowrap mt-5 sm:mt-6 md:mt-7 lg:mt-8 cursor-pointer">
+            SEND MESSAGE
+          </button>
+        </div>
+      </form>
+
+      <!-- OTP -->
+      <form action="../index.html" id="otpForm" class="popup-form flex flex-col items-center w-full sm:w-3/4 md:w-3/5 lg:w-1/2 xl:w-2/5 2xl:w-1/3 py-6 sm:py-8 md:py-9 lg:py-10 px-6 sm:px-7 md:px-8 lg:px-10 overflow-hidden no-vissible">
+        <div class="close-popup">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.46663 21.3594L6.64062 20.5334L13.174 14L6.64062 7.46669L7.46663 6.64069L14 13.174L20.5333 6.64069L21.3593 7.46669L14.826 14L21.3593 20.5334L20.5333 21.3594L14 14.826L7.46663 21.3594Z" 
+            fill="currentColor"/>
+          </svg>
+        </div>
+        <div class="flex flex-col gap-1.5 mt-6 relative z-1">
+          <h4 class="text-[var(--primary-dark)] rubik text-xl font-semibold text-center">Enter Verification Code</h4>
+          <p class="raleway font-light text-sm md:text-[15px] leading-[22px] md:leading-[24px] text-[var(--primary-dark)] text-center">
+              A verification code has been sent to your phone number.
+          </p>
+        </div>
+
+        <div class="flex flex-col gap-4 w-full mt-5 sm:mt-6 lg:mt-8 relative z-1">
+          <div class="flex gap-2 sm:gap-4 items-center mb-4">
+            <input type="text" maxlength="1" autofocus required >
+            <input type="text" maxlength="1" required>
+            <input type="text" maxlength="1" required>
+            <input type="text" maxlength="1" required>
+            <input type="text" maxlength="1" required>
+            <input type="text" maxlength="1" required>
           </div>
 
-          <div class="flex flex-col gap-4 w-full mt-5 sm:mt-6 lg:mt-8 relative z-1">
-            <input type="text" placeholder="full name" name="fullName" required>
-            <div class="flex gap-3">
-              <input type="number" placeholder="phone number" name="phoneNumber" required>
-              <input type="email" placeholder="email address" name="emailAddress" required>
-            </div>
-            <textarea name="" id="" placeholder="write your message" name="message"></textarea>
-
-            <button id="sendOtp" type="submit" class="block font-bold raleway px-4 py-2.5 min-w-[176px] pop-button whitespace-nowrap mt-5 sm:mt-6 md:mt-7 lg:mt-8 cursor-pointer">
-              SEND MESSAGE
-            </button>
-          </div>
-        </form>
-
-        <!-- OTP -->
-        <form action="../index.html" id="otpForm" class="popup-form flex flex-col items-center w-full sm:w-3/4 md:w-3/5 lg:w-1/2 xl:w-2/5 2xl:w-1/3 py-6 sm:py-8 md:py-9 lg:py-10 px-6 sm:px-7 md:px-8 lg:px-10 overflow-hidden no-vissible">
-          <div class="close-popup">
-            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M7.46663 21.3594L6.64062 20.5334L13.174 14L6.64062 7.46669L7.46663 6.64069L14 13.174L20.5333 6.64069L21.3593 7.46669L14.826 14L21.3593 20.5334L20.5333 21.3594L14 14.826L7.46663 21.3594Z" 
-              fill="currentColor"/>
-            </svg>
-          </div>
-          <div class="flex flex-col gap-1.5 mt-6 relative z-1">
-            <h4 class="text-[var(--primary-dark)] rubik text-xl font-semibold text-center">Enter Verification Code</h4>
-            <p class="raleway font-light text-sm md:text-[15px] leading-[22px] md:leading-[24px] text-[var(--primary-dark)] text-center">
-                A verification code has been sent to your phone number.
+          <div class="flex items-center justify-between flex-wrap gap-3.5">
+            <p class="raleway font-light text-sm md:text-[15px] leading-[22px] md:leading-[24px]text-[var(--primary-dark)] text-center" id="resendOtp">
+              Resend OTP : <span class="resend-time">00:00</span>
+            </p>
+            <p id="editNumber" class="raleway font-light text-sm md:text-[15px] leading-[22px] md:leading-[24px] text-[var(--primary-dark)] text-center flex items-center gap-1.5 cursor-pointer">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3.375 12.9053V14.25C3.375 14.3495 3.41451 14.4448 3.48484 14.5152C3.55516 14.5855 3.65054 14.625 3.75 14.625H5.09475C5.19401 14.625 5.28922 14.5856 5.3595 14.5155L11.7345 8.14051L9.8595 6.26551L3.4845 12.6405C3.4144 12.7108 3.37502 12.806 3.375 12.9053ZM11.3175 4.80751L13.1925 6.68251L14.0947 5.78026C14.2354 5.63961 14.3143 5.44888 14.3143 5.25001C14.3143 5.05114 14.2354 4.8604 14.0947 4.71976L13.2802 3.90526C13.1396 3.76466 12.9489 3.68567 12.75 3.68567C12.5511 3.68567 12.3604 3.76466 12.2197 3.90526L11.3175 4.80751Z" 
+                stroke="currentColor"/>
+              </svg>
+              Edit number
             </p>
           </div>
-
-          <div class="flex flex-col gap-4 w-full mt-5 sm:mt-6 lg:mt-8 relative z-1">
-            <div class="flex gap-2 sm:gap-4 items-center mb-4">
-              <input type="text" maxlength="1" autofocus required >
-              <input type="text" maxlength="1" required>
-              <input type="text" maxlength="1" required>
-              <input type="text" maxlength="1" required>
-              <input type="text" maxlength="1" required>
-              <input type="text" maxlength="1" required>
-            </div>
-
-            <div class="flex items-center justify-between flex-wrap gap-3.5">
-              <p class="raleway font-light text-sm md:text-[15px] leading-[22px] md:leading-[24px]text-[var(--primary-dark)] text-center" id="resendOtp">
-               Resend OTP : <span class="resend-time">00:00</span>
-              </p>
-              <p id="editNumber" class="raleway font-light text-sm md:text-[15px] leading-[22px] md:leading-[24px] text-[var(--primary-dark)] text-center flex items-center gap-1.5 cursor-pointer">
-                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M3.375 12.9053V14.25C3.375 14.3495 3.41451 14.4448 3.48484 14.5152C3.55516 14.5855 3.65054 14.625 3.75 14.625H5.09475C5.19401 14.625 5.28922 14.5856 5.3595 14.5155L11.7345 8.14051L9.8595 6.26551L3.4845 12.6405C3.4144 12.7108 3.37502 12.806 3.375 12.9053ZM11.3175 4.80751L13.1925 6.68251L14.0947 5.78026C14.2354 5.63961 14.3143 5.44888 14.3143 5.25001C14.3143 5.05114 14.2354 4.8604 14.0947 4.71976L13.2802 3.90526C13.1396 3.76466 12.9489 3.68567 12.75 3.68567C12.5511 3.68567 12.3604 3.76466 12.2197 3.90526L11.3175 4.80751Z" 
-                  stroke="currentColor"/>
-                </svg>
-                Edit number
-              </p>
-            </div>
-            <button type="submit" id="otpConfirm" class="block font-bold raleway px-4 py-2.5 min-w-[176px] pop-button whitespace-nowrap mt-5 sm:mt-6 md:mt-7 lg:mt-8 cursor-pointer">
-              CONFIRM
-            </button>
-          </div>
-        </form>
-      </div>
-     </div>
-    <!-- POPUP FORM -->
+          <button type="submit" id="otpConfirm" class="block font-bold raleway px-4 py-2.5 min-w-[176px] pop-button whitespace-nowrap mt-5 sm:mt-6 md:mt-7 lg:mt-8 cursor-pointer">
+            CONFIRM
+          </button>
+        </div>
+      </form>
+    </div>
+    </div>
+  <!-- POPUP FORM -->
 
     <script src="../lib/swiper.min.js"></script>
     <script defer src="../js/script.js"></script>

@@ -1596,7 +1596,7 @@ background: linear-gradient(75.7deg, #7125CF 0%, #121420 100%);
     border-radius: 14px;
 }
 .build-points li{
-    padding-left: 26px;
+    padding-left: 32px;
     position: relative;
 }
 .build-points li::before{
@@ -1662,7 +1662,64 @@ background: linear-gradient(75.7deg, #7125CF 0%, #121420 100%);
         box-shadow: 0px 6px 10px #BD98FF;
     }
 }
-
+.why-back{
+    background-color: rgba(18, 20, 32, 0.1);
+    border: 1px solid #7125CF;
+    box-shadow: inset 0px 0px 18px rgba(18, 20, 32, 0.3);
+}
+.core-feature-card{
+    background-color: rgba(18, 20, 32, 0.5);
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border-radius: 16px;
+}
+.core-feature-card img{ transition: ease 0.5s;}
+.core-feature-card:hover img{
+    transform: scale(1.05);
+}
+.who-use{
+    background-color: white;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    &:hover{
+        transition: 0.5s ease !important;
+        transform: translateY(-8px);
+        box-shadow: 0 4px 16px #A358FF;
+    }
+}
+.work-card{
+    background-color: white;
+    color: #121420;
+    border-radius: 14px;
+    &:hover{
+        background-color: #7125CF;
+        color: white;
+        transform: translateY(-8px);
+        transition: 0.5s ease-in-out !important;
+    }
+}
+.work-card .number{
+    background-color: white;
+    color: #7125CF;
+    border-radius: 50%;
+    border: 5px solid #7125CF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    transition: 0.5s ease-in-out;
+}
+.work-card:hover .number{
+    border: 5px solid white;
+    color: white;
+    background-color: #7125CF;
+}
 /* RESPONSIVE */
     
 @media (max-width: 40em) {
